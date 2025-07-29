@@ -299,7 +299,7 @@ export default function Home(): JSX.Element {
       description: 'The lower house of the Indian Parliament, where national laws and policies are debated and enacted.',
       level: 'Advanced',
       delegates: 'Unknown',
-      agenda: 'Deliberation on the implementation of Uniform Civil Code in India.',
+      agenda: 'DELIBERATION ON COMPREHENSIVE ELECTORAL REFORMS WITH SPECIAL EMPHASIS ON THE CRIMINALISATION OF POLITICS IN INDIA',
       chairpersons: ['Hon. Speaker Smt. Meenakshi Devi', 'Shri. Vikram Seth'],
       rulesPdf: '/filenotfound',
       type: 'National',
