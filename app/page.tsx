@@ -334,7 +334,6 @@ export default function Home(): JSX.Element {
 
   const timeline = [
     { date: 'August 22, 2025', event: 'Opening Ceremony', status: 'completed' },
-    { date: 'August 23, 2025', event: 'Socials', status: 'completed' },
     { date: 'August 23, 2025', event: 'MUN committee sessions Day-1', status: 'current' },
     { date: 'August 23, 2025', event: 'Cultural Evening', status: 'upcoming' },
     { date: 'August 24, 2025', event: 'MUN committee sessions Day-2', status: 'current' },
@@ -784,13 +783,13 @@ unprecedented heights!
               },
               {
                 name: 'Rishi Bhandari',
-                post: 'Deputy Secretary General',
+                post: 'Assistant Secretary General',
                 image: '/secretariat/rishi.jpeg',
                 bio: 'Supports core leadership and keeps the MUN engine running smoothly behind the scenes.',
               },
               {
                 name: 'Dhruv Jain',
-                post: 'Deputy Director General',
+                post: 'Assistant Director General',
                 image: '/secretariat/dhruv.jpeg',
                 bio: 'Manages conference operations, logistics, and ensures a smooth delegate experience.',
               },
