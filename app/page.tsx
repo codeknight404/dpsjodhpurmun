@@ -625,7 +625,7 @@ unprecedented heights!
                     <ul className="text-sm text-gray-700 space-y-1">
                       <li>• 3,000+ delegates trained</li>
                       <li>• 100+ schools participated</li>
-                      <li>• 15+ countries represented</li>
+                      <li>• 45+ countries represented</li>
                       <li>• 95% delegate satisfaction rate</li>
                     </ul>
                   </div>
