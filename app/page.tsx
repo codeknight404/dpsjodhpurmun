@@ -220,10 +220,10 @@ export default function Home(): JSX.Element {
   }, []);
 
   const stats = [
-    { icon: Trophy, number: '8', label: 'Years of Excellence', color: 'from-yellow-400 to-yellow-600' },
-    { icon: Users, number: '500+', label: 'Delegates Expected', color: 'from-blue-400 to-blue-600' },
-    { icon: Award, number: '8+', label: 'Dynamic Committees', color: 'from-purple-400 to-purple-600' },
-    { icon: Star, number: '50+', label: 'Participating Schools', color: 'from-green-400 to-green-600' },
+    { icon: Trophy, number: '10', label: 'Years of Excellence', color: 'from-yellow-400 to-yellow-600' },
+    { icon: Users, number: '350+', label: 'Delegates Expected', color: 'from-blue-400 to-blue-600' },
+    { icon: Award, number: '9+', label: 'Dynamic Committees', color: 'from-purple-400 to-purple-600' },
+    { icon: Star, number: '15+', label: 'Participating Schools', color: 'from-green-400 to-green-600' },
   ];
 
   const allCommittees: Committee[] = [
@@ -234,7 +234,7 @@ export default function Home(): JSX.Element {
       level: 'Advanced',
       delegates: 41,
       agenda: 'ADDRESSING GENDER-BASED ECONOMIC INEQUALITIES- A CRITICAL EVALUATION OF THE PINK TAX AND ITS IMPACT ON WOMEN\'S FINANCIAL EQUALITY',
-      chairpersons: ['Ms. Anya Sharma', 'Mr. Rohan Gupta'],
+      chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
       type: 'International',
     },
@@ -245,7 +245,7 @@ export default function Home(): JSX.Element {
       level: 'Intermediate',
       delegates: 40,
       agenda: 'WARFARE 2.0: ADDRESSING EMERGING THREATS AND REDEFINING WAR CRIMES IN THE CONTEXT OF CYBER WARFARE AND DIGITAL CONFLICT',
-      chairpersons: ['Dr. Priya Singh', 'Mr. Vivek Jain'],
+      chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
       type: 'International',
     },
@@ -256,7 +256,7 @@ export default function Home(): JSX.Element {
       level: 'Advanced',
       delegates: 19,
       agenda: 'DELIBERATION ON RISING TENSIONS BETWEEN ISRAEL AND IRAN AND STRATEGIES FOR DE-ESCALATION.',
-      chairpersons: ['Prof. Elena Petrova', 'Ms. David Lee'],
+      chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
       type: 'International',
     },
@@ -267,7 +267,7 @@ export default function Home(): JSX.Element {
       level: 'Beginner',
       delegates: 45,
       agenda: 'DIPLOMATIC REVIEW OF CRITICAL HISTORIC CRISIS AND THEIR LASTING IMPACT ON PRESENT-DAY INTERNATIONAL AFFAIRS.',
-      chairpersons: ['Dr. Sanjeev Kumar', 'Ms. Emily White'],
+      chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
       type: 'National',
     },
@@ -278,7 +278,7 @@ export default function Home(): JSX.Element {
       level: 'Intermediate',
       delegates: 47,
       agenda: 'PROMOTING AND PROTECTING FREEDOM OF THE PRESS AND THE SAFETY OF JOURNALISTS AMID RISING AUTHORITARIANISM',
-      chairpersons: ['Ms. Sarah Khan', 'Mr. Ben Carter'],
+      chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
       type: 'International',
     },
@@ -289,7 +289,7 @@ export default function Home(): JSX.Element {
       level: 'Beginner',
       delegates: 36,
       agenda: 'ACCELERATING GLOBAL ACTION TO END PREVENTABLE CHILD DEATHS BY 2030',
-      chairpersons: ['Gen. Robert Johnson', 'Ms. Nina Patel'],
+      chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
       type: 'International',
     },
@@ -297,10 +297,10 @@ export default function Home(): JSX.Element {
       name: 'Lok Sabha',
       short: 'LS',
       description: 'The lower house of the Indian Parliament, where national laws and policies are debated and enacted.',
-      level: 'Advanced',
+      level: 'Beginner',
       delegates: 136,
       agenda: 'DELIBERATION ON COMPREHENSIVE ELECTORAL REFORMS WITH SPECIAL EMPHASIS ON THE CRIMINALISATION OF POLITICS IN INDIA',
-      chairpersons: ['Hon. Speaker Smt. Meenakshi Devi', 'Shri. Vikram Seth'],
+      chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
       type: 'National',
     },
@@ -311,7 +311,7 @@ export default function Home(): JSX.Element {
       level: 'Advanced',
       delegates: 31,
       agenda: 'EXAMINING THE LEGAL CONSEQUENCES OF CONFLICTS BETWEEN DOMESTIC LEGISLATION AND INTERNATIONAL TREATY OBLIGATIONS WITH SPECIAL EMPHASIS ON THE JUDICIAL PRECEDENTS INCLUDING BREARD V. GREENE AND THE NORTH SEA CONTINENTAL SHELF CASES',
-      chairpersons: ['Dr. Anand Verma', 'Ms. Geetanjali Rao'],
+      chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
       type: 'International',
     },
@@ -322,7 +322,7 @@ export default function Home(): JSX.Element {
       level: 'Intermediate',
       delegates: 33,
       agenda: 'JOURNALISM | PHOTOGRAPHY | CINEMATOGRAPHY | CARICATURE',
-      chairpersons: ['Dr. Anand Verma', 'Ms. Geetanjali Rao'],
+      chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
       type: 'International',
     },
@@ -364,7 +364,7 @@ export default function Home(): JSX.Element {
           variants={waveBackground} // <--- Pass the variant object here
           animate="wave"           // <--- Tell Framer Motion to animate the 'wave' variant
         />
-      </div>        
+      </div>
 
       {/* Header Section */}
       <motion.header
@@ -377,12 +377,12 @@ export default function Home(): JSX.Element {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <Image src="/logo1.png" alt="DPS MUN Logo" width={48} height={48} className="rounded-full" />
-            <span className="text-2xl font-bold text-[#1A522A]">DPS MUN 8.0</span>
+            <span className="text-2xl font-bold text-[#1A522A]">DPS MUN VIII</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Committees', 'Secretariat', 'Timeline'].map((item) => (
+            {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners', 'Timeline'].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -415,7 +415,7 @@ export default function Home(): JSX.Element {
               className="md:hidden bg-white border-t border-gray-200"
             >
               <div className="px-6 py-4 space-y-4">
-                {['Home', 'About', 'Committees', 'Secretariat', 'Timeline'].map((item) => (
+                {['Home', 'About', 'Committees', 'Secretariat','Event Partners', 'Timeline'].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
@@ -562,18 +562,18 @@ export default function Home(): JSX.Element {
             <h2 className="text-4xl md:text-5xl font-bold text-[#1A522A] mb-6">About DPS MUN Jodhpur</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Delhi Public School Jodhpur Model United Nations
-(DPSMUN), Jodhpur, stands as a distinguished MUN
-conference with a legacy of seven successful editions. At
-DPSMUN,
-we are dedicated to delivering excellence to our
-participants, fostering their growth in diplomacy,
-research, public speaking, and other essential soft
-skills. Since 2016, DPSMUN has not only introduced
-but also consistently upheld and exceeded the
-standards of MUN conferences in the city. This year,
-we are thrilled to announce our 8th edition,
-promising to elevate the celebration of diplomacy to
-unprecedented heights!
+              (DPSMUN), Jodhpur, stands as a distinguished MUN
+              conference with a legacy of seven successful editions. At
+              DPSMUN,
+              we are dedicated to delivering excellence to our
+              participants, fostering their growth in diplomacy,
+              research, public speaking, and other essential soft
+              skills. Since 2016, DPSMUN has not only introduced
+              but also consistently upheld and exceeded the
+              standards of MUN conferences in the city. This year,
+              we are thrilled to announce our 8th edition,
+              promising to elevate the celebration of diplomacy to
+              unprecedented heights!
 
             </p>
           </motion.div>
@@ -745,7 +745,6 @@ unprecedented heights!
       </section>
 
       {/* Secretariat Section */}
-      {/* Secretariat Section */}
       <section id="secretariat" className="py-20 pt-24 bg-white/80 backdrop-filter backdrop-blur-md">
         <div className="container mx-auto px-6">
           <motion.div
@@ -761,12 +760,13 @@ unprecedented heights!
             </p>
           </motion.div>
 
+          {/* Main Large Cards */}
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerChildren}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-12"
           >
             {[
               {
@@ -798,29 +798,128 @@ unprecedented heights!
                 key={index}
                 variants={fadeInUp}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="bg-white/60 border border-white/20 backdrop-filter backdrop-blur-lg p-6 rounded-2xl shadow-lg text-center transition-all items-center"
+                className="bg-white/60 border border-white/20 backdrop-filter backdrop-blur-lg p-6 rounded-2xl shadow-lg text-center transition-all"
               >
                 <div className="w-28 h-28 mx-auto mb-4">
                   <Image
                     src={member.image}
                     alt={member.name}
-                    width={112}
-                    height={112}
+                    width={125}
+                    height={125}
                     className="rounded-full object-cover w-full h-full border-4 border-[#1A522A]"
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-[#1A522A]">{member.name}</h3>
                 <p className="text-sm text-[#2E8B57] font-medium mb-2">{member.post}</p>
-                <p className="text-gray-600 text-smv">{member.bio}</p>
+                <p className="text-gray-600 text-sm">{member.bio}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* Smaller Cards */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={staggerChildren}
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8"
+          >
+            {[
+              { name: 'Mudra Warde', post: 'USG EB Affairs', image: '/secretariat/mudra.jpeg' },
+              { name: 'Abhinna Das', post: 'USG EB Affairs', image: '/secretariat/abhinna.jpeg' },
+              { name: 'Pratha Bharadwaj', post: 'USG Delegate Affairs', image: '/secretariat/pratha.jpeg' },
+              { name: 'Rupeksha Rajpurohit', post: 'USG Delegate Affairs', image: '/secretariat/rupeksha.jpeg' },
+              { name: 'Vinay Chhugani', post: 'USG Delegate Affairs', image: '/secretariat/vinay.jpeg' },
+              { name: 'Harshal Sharma', post: 'USG IT', image: '/secretariat/harshal.jpeg' },
+              { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
+              { name: 'Prachi Shah', post: 'USG IT', image: '/secretariat/prachi.jpeg' },
+              { name: 'Krishna Dhoot', post: 'USG IT', image: '/secretariat/krishna.jpeg' },
+              { name: 'Moulik Lodha', post: 'USG Cultural', image: '/secretariat/moulik.jpeg' },
+              { name: 'Charvi Maheshwari', post: 'USG Cultural', image: '/secretariat/charvi.jpeg' },
+              { name: 'Priyanshi Charan', post: 'USG Cultural', image: '/secretariat/priyanshi.jpeg' },
+              { name: 'Kritika Kalia', post: 'USG Marketing', image: '/secretariat/kritika.jpeg' },
+              { name: 'Ayushi Chaudhary', post: 'USG Marketing', image: '/secretariat/ayushi.jpeg' },
+              { name: 'Kenjal Jain', post: 'USG Finance', image: '/secretariat/kenjal.jpeg' },
+              { name: 'Rakshit Loonkar', post: 'USG Finance', image: '/secretariat/rakshit.jpeg' },
+              { name: 'Laxman Beniwal', post: 'USG Discipline', image: '/secretariat/laxman.jpeg' },
+              { name: 'Gunnpreet Gulati', post: 'USG Transport', image: '/secretariat/gunnpreet.jpeg' },
+              { name: 'Samarth Vasu', post: 'USG Catering', image: '/secretariat/samarth.jpeg' },
+              { name: 'Rachel C. Kujur', post: 'USG Literary', image: '/secretariat/rachel.jpeg' },
+              { name: 'Bhavya Tiwari', post: 'USG Decoration', image: '/secretariat/bhavya.jpeg' },
+              { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
+              { name: 'Kamlesh Suthar', post: 'USG Design', image: '/secretariat/kamlesh.jpeg' },
+              { name: 'Kavya Anchalia', post: 'USG Social Media', image: '/secretariat/kavya.jpeg' },
+              { name: 'Teesha', post: 'USG Social Media', image: '/secretariat/teesha.jpeg' },
+            ].map((member, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                whileHover={{ scale: 1.05 }}
+                className="bg-white/50 border border-white/20 backdrop-filter backdrop-blur-lg p-5 rounded-xl shadow-md text-center transition-all m-2"
+              >
+                <div className="w-20 h-20 mx-auto mb-3">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    width={80}
+                    height={80}
+                    className="rounded-full object-cover w-full h-full border-2 border-[#1A522A]"
+                  />
+                </div>
+                <h3 className="text-bold text-lg font-semibold text-[#1A522A]">{member.name}</h3>
+                <p className="text-sm text-[#2E8B57] font-medium">{member.post}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+          
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section id="event partners" className="py-20 pt-24 bg-white/90 backdrop-blur-md">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInUp}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1A522A] mb-2">Event Partners</h2>
+            <p className="text-base text-gray-600 max-w-xl mx-auto">
+              Trusted by leading brands that believe in the power of youth, diplomacy, and global discourse.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={staggerChildren}
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
+          >
+            {[
+              { name: 'DPS Jodhpur', logo: '/sponsors/dpsjodhpur.png' },
+            ].map((sponsor, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                whileHover={{ scale: 1.03 }}
+                className="bg-white border border-gray-200 rounded-xl shadow-sm block items-center justify-center h-45 transition-all duration-300 p-4"
+              >
+                <div className="flex flex-col items-center">
+                  <Image
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    width={100}
+                    height={60}
+                    className="object-contain h-25  "
+                  />
+                  <p className="text-[1.5em] text-shadow-2xs font-bold text-[#1A522A] mt-2 racing-sans-one-regular">{sponsor.name}</p></div>
               </motion.div>
             ))}
           </motion.div>
         </div>
-      </section>
-
-
-      {/* Timeline Section */}
-      <section id="Gallery" className="py-20 backdrop-filter backdrop-blur-md">
       </section>
 
       {/* Timeline Section */}
@@ -834,7 +933,7 @@ unprecedented heights!
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-[#1A522A] mb-6">Important Timeline</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">Stay updated with key dates and deadlines for DPS MUN 8.0</p>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">Stay updated with key dates and deadlines for DPS MUN VIII</p>
           </motion.div>
 
           <motion.div
@@ -880,8 +979,8 @@ unprecedented heights!
         </div>
       </section>
 
-       
-            
+
+
 
       {/* Footer */}
       <footer className="bg-[#1A522A] text-white py-12">
@@ -890,7 +989,7 @@ unprecedented heights!
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="flex flex-col items-center md:items-start">
             <div className="flex items-center space-x-3 mb-4">
               <Image src="/logo.png" alt="DPS MUN Logo" width={48} height={48} />
-              <h3 className="text-2xl font-bold">DPS MUN 8.0</h3>
+              <h3 className="text-2xl font-bold">DPS MUN VIII</h3>
             </div>
             <p className="text-white/80 text-sm">Shaping future diplomats</p>
           </motion.div>

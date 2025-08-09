@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'DPS MUN 8.0',
+  title: 'DPS MUN VIII',
   description: 'Delhi Public School Jodhpur Model United Nations Conference',
   authors: [{ name: 'DPS Jodhpur' }],
   keywords: ['DPS MUN', 'Model United Nations', 'Conference', 'DPS MUN Jodhpur'],
