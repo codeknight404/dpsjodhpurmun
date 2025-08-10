@@ -231,7 +231,7 @@ export default function Home(): JSX.Element {
       short: 'UNCSW',
       description: 'The principal UN body dedicated to promoting gender equality and the empowerment of women.',
       
-      delegates: 41,
+      delegates: 40,
       agenda: 'ADDRESSING GENDER-BASED ECONOMIC INEQUALITIES- A CRITICAL EVALUATION OF THE PINK TAX AND ITS IMPACT ON WOMEN\'S FINANCIAL EQUALITY',
       chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
@@ -253,7 +253,7 @@ export default function Home(): JSX.Element {
       short: 'UNSC',
       description: 'The primary UN body responsible for maintaining international peace and security.',
       
-      delegates: 36,
+      delegates: 30,
       agenda: 'DELIBERATION ON RISING TENSIONS BETWEEN ISRAEL AND IRAN AND STRATEGIES FOR DE-ESCALATION.',
       chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
@@ -264,7 +264,7 @@ export default function Home(): JSX.Element {
       short: 'HCC',
       description: 'Simulates a historical body to address and resolve a crisis from the past.',
       
-      delegates: 45,
+      delegates: 50,
       agenda: 'DIPLOMATIC REFLECTIONS ON THE 1999 KARGIL WAR AND ITS ENDURING INFLUENCE ON INDO-PAK RELATIONS AND INDIA\’S FOREIGN POLICY',
       chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
@@ -275,7 +275,7 @@ export default function Home(): JSX.Element {
       short: 'UNHRC',
       description: 'The UN body responsible for the promotion and protection of all human rights around the globe.',
       
-      delegates: 47,
+      delegates: 50,
       agenda: 'PROMOTING AND PROTECTING FREEDOM OF THE PRESS AND THE SAFETY OF JOURNALISTS AMID RISING AUTHORITARIANISM',
       chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
@@ -286,7 +286,7 @@ export default function Home(): JSX.Element {
       short: 'UNICEF',
       description: 'The UN agency responsible for providing humanitarian and developmental aid to children worldwide.',
       
-      delegates: 36,
+      delegates: 30,
       agenda: 'ACCELERATING GLOBAL ACTION TO END PREVENTABLE CHILD DEATHS BY 2030',
       chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
@@ -297,7 +297,7 @@ export default function Home(): JSX.Element {
       short: 'Lok Sabha',
       description: 'The lower house of the Indian Parliament, where national laws and policies are debated and enacted.',
       
-      delegates: 136,
+      delegates: 140,
       agenda: 'DELIBERATION ON COMPREHENSIVE ELECTORAL REFORMS WITH SPECIAL EMPHASIS ON THE CRIMINALISATION OF POLITICS IN INDIA',
       chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
@@ -308,7 +308,7 @@ export default function Home(): JSX.Element {
       short: 'ICJ',
       description: 'The principal judicial organ of the UN, settling legal disputes between states.',
       
-      delegates: 31,
+      delegates: 30,
       agenda: 'EXAMINING THE LEGAL CONSEQUENCES OF CONFLICTS BETWEEN DOMESTIC LEGISLATION AND INTERNATIONAL TREATY OBLIGATIONS WITH SPECIAL EMPHASIS ON THE JUDICIAL PRECEDENTS INCLUDING BREARD V. GREENE AND THE NORTH SEA CONTINENTAL SHELF CASES',
       chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
@@ -319,7 +319,7 @@ export default function Home(): JSX.Element {
       short: 'IP',
       description: 'A simulation of journalists and media outlets who report on the proceedings of all other committees.',
       
-      delegates: 33,
+      delegates: 30,
       agenda: 'JOURNALISM | PHOTOGRAPHY | CINEMATOGRAPHY | CARICATURE',
       chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
@@ -380,7 +380,7 @@ export default function Home(): JSX.Element {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Committees', 'Secretariat', 'Timeline'].map((item) => (
+            {['Home', 'About', 'Committees', 'Secretariat','Event Partners', 'Timeline'].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -413,7 +413,7 @@ export default function Home(): JSX.Element {
               className="md:hidden bg-white border-t border-gray-200"
             >
               <div className="px-6 py-4 space-y-4">
-                {['Home', 'About', 'Committees', 'Secretariat', 'Timeline'].map((item) => (
+                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners','Timeline'].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
@@ -867,7 +867,52 @@ export default function Home(): JSX.Element {
 
         </div>
       </section>
+            {/* Sponsors Section */}
+      <section id="event partners" className="py-20 pt-24 bg-white/90 backdrop-blur-md">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInUp}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1A522A] mb-2">Event Partners</h2>
+            <p className="text-base text-gray-600 max-w-xl mx-auto">
+              Trusted by leading brands that believe in the power of youth, diplomacy, and global discourse.
+            </p>
+          </motion.div>
 
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={staggerChildren}
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
+          >
+            {[
+              { name: 'DPS Jodhpur', logo: '/sponsors/dpsjodhpur.png' },
+            ].map((sponsor, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                whileHover={{ scale: 1.03 }}
+                className="bg-white border border-gray-200 rounded-xl shadow-sm block items-center justify-center h-50 min-w-50 transition-all duration-300 p-4"
+              >
+                <div className="flex flex-col items-center justify-center">
+                  <Image
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    width={100}
+                    height={60}
+                    className="object-contain h-25  "
+                  />
+                  <p className="text-[1.5em] text-shadow-2xs font-bold text-[#1A522A] mt-2 racing-sans-one-regular">{sponsor.name}</p></div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
       
 
       {/* Timeline Section */}
