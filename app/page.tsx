@@ -822,7 +822,7 @@ export default function Home(): JSX.Element {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerChildren}
-            className="flex gap-8 overflow-x-auto overflow-y-hidden pb-4 scroll-smooth snap-x snap-mandatory"
+            className="flex gap-8 overflow-x-auto overflow-y-hidden pb-4 scroll-smooth snap-x snap-mandatory scrollbar-show"
           >
             {[
               { name: 'Mudra Warde', post: 'USG EB Affairs', image: '/secretariat/mudra.jpeg' },

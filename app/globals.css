@@ -190,3 +190,21 @@
     display: block !important;
   }
 }
+
+.scrollbar-show {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+}
+
+.scrollbar-show::-webkit-scrollbar {
+  height: 6px; /* height for horizontal scrollbar */
+}
+
+.scrollbar-show::-webkit-scrollbar-thumb {
+  background: #1A522A;
+  border-radius: 10px;
+}
+
+.scrollbar-show::-webkit-scrollbar-track {
+  background: transparent;
+}
