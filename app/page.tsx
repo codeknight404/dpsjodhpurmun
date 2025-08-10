@@ -266,7 +266,7 @@ export default function Home(): JSX.Element {
       description: 'Simulates a historical body to address and resolve a crisis from the past.',
       level: 'Beginner',
       delegates: 45,
-      agenda: 'DIPLOMATIC REVIEW OF CRITICAL HISTORIC CRISIS AND THEIR LASTING IMPACT ON PRESENT-DAY INTERNATIONAL AFFAIRS.',
+      agenda: 'DIPLOMATIC REFLECTIONS ON THE 1999 KARGIL WAR AND ITS ENDURING INFLUENCE ON INDO-PAK RELATIONS AND INDIA\’S FOREIGN POLICY',
       chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
       type: 'National',
@@ -371,7 +371,7 @@ export default function Home(): JSX.Element {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-filter backdrop-blur-lg shadow-sm"
+        className="ipad-force-mobile fixed top-0 fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-filter backdrop-blur-lg shadow-sm"
       >
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
@@ -415,7 +415,7 @@ export default function Home(): JSX.Element {
               className="md:hidden bg-white border-t border-gray-200"
             >
               <div className="px-6 py-4 space-y-4">
-                {['Home', 'About', 'Committees', 'Secretariat','Event Partners', 'Timeline'].map((item) => (
+                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners', 'Timeline'].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
@@ -481,7 +481,7 @@ export default function Home(): JSX.Element {
                 </div>
                 <div className="flex items-center justify-center lg:justify-start space-x-2">
                   <Users className="w-5 h-5 text-[#2E8B57]" />
-                  <span className="text-sm text-gray-600">500+ Delegates</span>
+                  <span className="text-sm text-gray-600">350+ Delegates</span>
                 </div>
               </motion.div>
             </motion.div>
@@ -822,40 +822,40 @@ export default function Home(): JSX.Element {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerChildren}
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8"
+            className="flex gap-8 overflow-x-auto overflow-y-hidden pb-4 scroll-smooth snap-x snap-mandatory"
           >
             {[
               { name: 'Mudra Warde', post: 'USG EB Affairs', image: '/secretariat/mudra.jpeg' },
               { name: 'Abhinna Das', post: 'USG EB Affairs', image: '/secretariat/abhinna.jpeg' },
-              { name: 'Pratha Bharadwaj', post: 'USG Delegate Affairs', image: '/secretariat/pratha.jpeg' },
+              { name: 'Ayushi Chaudhary', post: 'USG EB Affairs & Marketing', image: '/secretariat/ayushi.jpeg' },
+              { name: 'Pratha Bhardwaj', post: 'USG Delegate Affairs', image: '/secretariat/pratha.jpeg' },
               { name: 'Rupeksha Rajpurohit', post: 'USG Delegate Affairs', image: '/secretariat/rupeksha.jpeg' },
               { name: 'Vinay Chhugani', post: 'USG Delegate Affairs', image: '/secretariat/vinay.jpeg' },
               { name: 'Harshal Sharma', post: 'USG IT', image: '/secretariat/harshal.jpeg' },
               { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
               { name: 'Prachi Shah', post: 'USG IT', image: '/secretariat/prachi.jpeg' },
               { name: 'Krishna Dhoot', post: 'USG IT', image: '/secretariat/krishna.jpeg' },
+              { name: 'Kavya Anchalia', post: 'USG Social Media', image: '/secretariat/kavya.jpeg' },
+              { name: 'Teesha Garg', post: 'USG Social Media', image: '/secretariat/teesha.jpeg' },
+              { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
+              { name: 'Kamlesh Suthar', post: 'USG Design', image: '/secretariat/kamlesh.jpeg' },
               { name: 'Moulik Lodha', post: 'USG Cultural', image: '/secretariat/moulik.jpeg' },
               { name: 'Charvi Maheshwari', post: 'USG Cultural', image: '/secretariat/charvi.jpeg' },
               { name: 'Priyanshi Charan', post: 'USG Cultural', image: '/secretariat/priyanshi.jpeg' },
               { name: 'Kritika Kalia', post: 'USG Marketing', image: '/secretariat/kritika.jpeg' },
-              { name: 'Ayushi Chaudhary', post: 'USG Marketing', image: '/secretariat/ayushi.jpeg' },
               { name: 'Kenjal Jain', post: 'USG Finance', image: '/secretariat/kenjal.jpeg' },
               { name: 'Rakshit Loonkar', post: 'USG Finance', image: '/secretariat/rakshit.jpeg' },
               { name: 'Laxman Beniwal', post: 'USG Discipline', image: '/secretariat/laxman.jpeg' },
-              { name: 'Gunnpreet Gulati', post: 'USG Transport', image: '/secretariat/gunnpreet.jpeg' },
+              { name: 'Gunnpreet Gulati', post: 'USG Transport & Catering', image: '/secretariat/gunnpreet.jpeg' },
               { name: 'Samarth Vasu', post: 'USG Catering', image: '/secretariat/samarth.jpeg' },
               { name: 'Rachel C. Kujur', post: 'USG Literary', image: '/secretariat/rachel.jpeg' },
               { name: 'Bhavya Tiwari', post: 'USG Decoration', image: '/secretariat/bhavya.jpeg' },
-              { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
-              { name: 'Kamlesh Suthar', post: 'USG Design', image: '/secretariat/kamlesh.jpeg' },
-              { name: 'Kavya Anchalia', post: 'USG Social Media', image: '/secretariat/kavya.jpeg' },
-              { name: 'Teesha', post: 'USG Social Media', image: '/secretariat/teesha.jpeg' },
             ].map((member, index) => (
               <motion.div
                 key={index}
                 variants={fadeInUp}
                 whileHover={{ scale: 1.05 }}
-                className="bg-white/50 border border-white/20 backdrop-filter backdrop-blur-lg p-5 rounded-xl shadow-md text-center transition-all m-2"
+                className="bg-white/50 border border-white/20 backdrop-filter backdrop-blur-lg p-5 rounded-xl shadow-md text-center transition-all m-2 min-w-[200px] snap-center"
               >
                 <div className="w-20 h-20 mx-auto mb-3">
                   <Image
@@ -871,7 +871,8 @@ export default function Home(): JSX.Element {
               </motion.div>
             ))}
           </motion.div>
-          
+
+
         </div>
       </section>
 
@@ -905,9 +906,9 @@ export default function Home(): JSX.Element {
                 key={index}
                 variants={fadeInUp}
                 whileHover={{ scale: 1.03 }}
-                className="bg-white border border-gray-200 rounded-xl shadow-sm block items-center justify-center h-45 transition-all duration-300 p-4"
+                className="bg-white border border-gray-200 rounded-xl shadow-sm block items-center justify-center h-50 min-w-50 transition-all duration-300 p-4"
               >
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center justify-center">
                   <Image
                     src={sponsor.logo}
                     alt={sponsor.name}
