@@ -371,7 +371,7 @@ export default function Home(): JSX.Element {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="ipad-force-mobile fixed top-0 fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-filter backdrop-blur-lg shadow-sm"
+        className="ipad-force-mobile left-0 w-full z-50 bg-white/80 backdrop-filter backdrop-blur-lg shadow-sm"
       >
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
@@ -843,12 +843,13 @@ export default function Home(): JSX.Element {
               { name: 'Charvi Maheshwari', post: 'USG Cultural', image: '/secretariat/charvi.jpeg' },
               { name: 'Priyanshi Charan', post: 'USG Cultural', image: '/secretariat/priyanshi.jpeg' },
               { name: 'Kritika Kalia', post: 'USG Marketing', image: '/secretariat/kritika.jpeg' },
+              { name: 'Laxman Beniwal', post: 'USG Discipline', image: '/secretariat/laxman.jpeg' },
+              { name: 'Shrishti Hiranandani', post: 'USG Discipline', image: '/secretariat/shrishti.jpeg' },
+              { name: 'Rachel C. Kujur', post: 'USG Literary', image: '/secretariat/rachel.jpeg' },
               { name: 'Kenjal Jain', post: 'USG Finance', image: '/secretariat/kenjal.jpeg' },
               { name: 'Rakshit Loonkar', post: 'USG Finance', image: '/secretariat/rakshit.jpeg' },
-              { name: 'Laxman Beniwal', post: 'USG Discipline', image: '/secretariat/laxman.jpeg' },
               { name: 'Gunnpreet Gulati', post: 'USG Transport & Catering', image: '/secretariat/gunnpreet.jpeg' },
               { name: 'Samarth Vasu', post: 'USG Catering', image: '/secretariat/samarth.jpeg' },
-              { name: 'Rachel C. Kujur', post: 'USG Literary', image: '/secretariat/rachel.jpeg' },
               { name: 'Bhavya Tiwari', post: 'USG Decoration', image: '/secretariat/bhavya.jpeg' },
             ].map((member, index) => (
               <motion.div
