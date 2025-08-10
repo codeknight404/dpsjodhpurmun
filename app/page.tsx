@@ -816,7 +816,7 @@ export default function Home(): JSX.Element {
               { name: 'Kamlesh Suthar', post: 'USG Design', image: '/secretariat/kamlesh.jpeg' },
               { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
               { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
-              { name: 'Ayushi Chaudhary', post: 'USG EB Affairs & Marketing', image: '/secretariat/ayushi.jpeg' },
+              { name: 'Ayushi Chaudhary', post: 'USG Marketing', image: '/secretariat/ayushi.jpeg' },
               
               
               { name: 'Abhinna Das', post: 'USG EB Affairs', image: '/secretariat/abhinna.jpeg' },
@@ -839,7 +839,7 @@ export default function Home(): JSX.Element {
               
               { name: 'Kenjal Jain', post: 'USG Finance', image: '/secretariat/kenjal.jpeg' },
               { name: 'Rakshit Loonkar', post: 'USG Finance', image: '/secretariat/rakshit.jpeg' },
-              { name: 'Gunnpreet Gulati', post: 'USG Transport & Catering', image: '/secretariat/gunnpreet.jpeg' },
+              { name: 'Gunnpreet Gulati', post: 'USG Transport', image: '/secretariat/gunnpreet.jpeg' },
               { name: 'Samarth Vasu', post: 'USG Catering', image: '/secretariat/samarth.jpeg' },
               { name: 'Bhavya Tiwari', post: 'USG Decoration', image: '/secretariat/bhavya.jpeg' },
             ].map((member, index) => (
