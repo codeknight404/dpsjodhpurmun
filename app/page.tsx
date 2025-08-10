@@ -810,19 +810,25 @@ export default function Home(): JSX.Element {
           >
             {[
               { name: 'Mudra Warde', post: 'USG EB Affairs', image: '/secretariat/mudra.jpeg' },
-              { name: 'Abhinna Das', post: 'USG EB Affairs', image: '/secretariat/abhinna.jpeg' },
               { name: 'Ayushi Chaudhary', post: 'USG EB Affairs & Marketing', image: '/secretariat/ayushi.jpeg' },
+
+              { name: 'Harshal Sharma', post: 'USG IT', image: '/secretariat/harshal.jpeg' },
+              { name: 'Kamlesh Suthar', post: 'USG Design', image: '/secretariat/kamlesh.jpeg' },
+              { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
+              { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
+              
+              
+              { name: 'Abhinna Das', post: 'USG EB Affairs', image: '/secretariat/abhinna.jpeg' },
+              
               { name: 'Pratha Bhardwaj', post: 'USG Delegate Affairs', image: '/secretariat/pratha.jpeg' },
               { name: 'Rupeksha Rajpurohit', post: 'USG Delegate Affairs', image: '/secretariat/rupeksha.jpeg' },
               { name: 'Vinay Chhugani', post: 'USG Delegate Affairs', image: '/secretariat/vinay.jpeg' },
-              { name: 'Harshal Sharma', post: 'USG IT', image: '/secretariat/harshal.jpeg' },
-              { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
+              
               { name: 'Prachi Shah', post: 'USG IT', image: '/secretariat/prachi.jpeg' },
               { name: 'Krishna Dhoot', post: 'USG IT', image: '/secretariat/krishna.jpeg' },
               { name: 'Teesha Garg', post: 'USG Social Media', image: '/secretariat/teesha.jpeg' },
               { name: 'Kavya Anchalia', post: 'USG Social Media', image: '/secretariat/kavya.jpeg' },
-              { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
-              { name: 'Kamlesh Suthar', post: 'USG Design', image: '/secretariat/kamlesh.jpeg' },
+              
               { name: 'Moulik Lodha', post: 'USG Cultural', image: '/secretariat/moulik.jpeg' },
               { name: 'Charvi Maheshwari', post: 'USG Cultural', image: '/secretariat/charvi.jpeg' },
               { name: 'Priyanshi Charan', post: 'USG Cultural', image: '/secretariat/priyanshi.jpeg' },
