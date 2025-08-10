@@ -105,7 +105,6 @@ interface Committee {
   name: string;
   short: string;
   description: string;
-  level: 'Beginner' | 'Intermediate' | 'Advanced';
   delegates: string | number;
   agenda: string;
   chairpersons: string[];
@@ -220,10 +219,10 @@ export default function Home(): JSX.Element {
   }, []);
 
   const stats = [
-    { icon: Trophy, number: '10', label: 'Years of Excellence', color: 'from-yellow-400 to-yellow-600' },
-    { icon: Users, number: '350+', label: 'Delegates Expected', color: 'from-blue-400 to-blue-600' },
-    { icon: Award, number: '9+', label: 'Dynamic Committees', color: 'from-purple-400 to-purple-600' },
-    { icon: Star, number: '15+', label: 'Participating Schools', color: 'from-green-400 to-green-600' },
+    { icon: Trophy, number: '9', label: 'Years of Excellence', color: 'from-yellow-400 to-yellow-600' },
+    { icon: Users, number: '350+', label: 'Delegates', color: 'from-blue-400 to-blue-600' },
+    { icon: Award, number: '9', label: 'Dynamic Committees', color: 'from-purple-400 to-purple-600' },
+    { icon: Star, number: '10+', label: 'Participating Schools', color: 'from-green-400 to-green-600' },
   ];
 
   const allCommittees: Committee[] = [
@@ -231,7 +230,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations Commission Of Status Of Women',
       short: 'UNCSW',
       description: 'The principal UN body dedicated to promoting gender equality and the empowerment of women.',
-      level: 'Advanced',
+      
       delegates: 41,
       agenda: 'ADDRESSING GENDER-BASED ECONOMIC INEQUALITIES- A CRITICAL EVALUATION OF THE PINK TAX AND ITS IMPACT ON WOMEN\'S FINANCIAL EQUALITY',
       chairpersons: ['Revealing Soon'],
@@ -242,7 +241,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations General Assembly First Committee',
       short: 'DISEC',
       description: 'The UN General Assembly\'s main committee for disarmament and international security matters.',
-      level: 'Intermediate',
+      
       delegates: 40,
       agenda: 'WARFARE 2.0: ADDRESSING EMERGING THREATS AND REDEFINING WAR CRIMES IN THE CONTEXT OF CYBER WARFARE AND DIGITAL CONFLICT',
       chairpersons: ['Revealing Soon'],
@@ -253,8 +252,8 @@ export default function Home(): JSX.Element {
       name: 'United Nations Security Council',
       short: 'UNSC',
       description: 'The primary UN body responsible for maintaining international peace and security.',
-      level: 'Advanced',
-      delegates: 19,
+      
+      delegates: 36,
       agenda: 'DELIBERATION ON RISING TENSIONS BETWEEN ISRAEL AND IRAN AND STRATEGIES FOR DE-ESCALATION.',
       chairpersons: ['Revealing Soon'],
       rulesPdf: '/filenotfound',
@@ -264,7 +263,7 @@ export default function Home(): JSX.Element {
       name: 'Historical Crisis Committee',
       short: 'HCC',
       description: 'Simulates a historical body to address and resolve a crisis from the past.',
-      level: 'Beginner',
+      
       delegates: 45,
       agenda: 'DIPLOMATIC REFLECTIONS ON THE 1999 KARGIL WAR AND ITS ENDURING INFLUENCE ON INDO-PAK RELATIONS AND INDIA\’S FOREIGN POLICY',
       chairpersons: ['Revealing Soon'],
@@ -275,7 +274,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations Human Rights Council',
       short: 'UNHRC',
       description: 'The UN body responsible for the promotion and protection of all human rights around the globe.',
-      level: 'Intermediate',
+      
       delegates: 47,
       agenda: 'PROMOTING AND PROTECTING FREEDOM OF THE PRESS AND THE SAFETY OF JOURNALISTS AMID RISING AUTHORITARIANISM',
       chairpersons: ['Revealing Soon'],
@@ -286,7 +285,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations International Children\'s Emergency Fund',
       short: 'UNICEF',
       description: 'The UN agency responsible for providing humanitarian and developmental aid to children worldwide.',
-      level: 'Beginner',
+      
       delegates: 36,
       agenda: 'ACCELERATING GLOBAL ACTION TO END PREVENTABLE CHILD DEATHS BY 2030',
       chairpersons: ['Revealing Soon'],
@@ -295,9 +294,9 @@ export default function Home(): JSX.Element {
     },
     {
       name: 'Lok Sabha',
-      short: 'LS',
+      short: 'Lok Sabha',
       description: 'The lower house of the Indian Parliament, where national laws and policies are debated and enacted.',
-      level: 'Beginner',
+      
       delegates: 136,
       agenda: 'DELIBERATION ON COMPREHENSIVE ELECTORAL REFORMS WITH SPECIAL EMPHASIS ON THE CRIMINALISATION OF POLITICS IN INDIA',
       chairpersons: ['Revealing Soon'],
@@ -308,7 +307,7 @@ export default function Home(): JSX.Element {
       name: 'International Court Of Justice',
       short: 'ICJ',
       description: 'The principal judicial organ of the UN, settling legal disputes between states.',
-      level: 'Advanced',
+      
       delegates: 31,
       agenda: 'EXAMINING THE LEGAL CONSEQUENCES OF CONFLICTS BETWEEN DOMESTIC LEGISLATION AND INTERNATIONAL TREATY OBLIGATIONS WITH SPECIAL EMPHASIS ON THE JUDICIAL PRECEDENTS INCLUDING BREARD V. GREENE AND THE NORTH SEA CONTINENTAL SHELF CASES',
       chairpersons: ['Revealing Soon'],
@@ -319,7 +318,7 @@ export default function Home(): JSX.Element {
       name: 'International Press',
       short: 'IP',
       description: 'A simulation of journalists and media outlets who report on the proceedings of all other committees.',
-      level: 'Intermediate',
+      
       delegates: 33,
       agenda: 'JOURNALISM | PHOTOGRAPHY | CINEMATOGRAPHY | CARICATURE',
       chairpersons: ['Revealing Soon'],
@@ -342,10 +341,9 @@ export default function Home(): JSX.Element {
 
   const highlights = [
     'Expert Chairpersons from prestigious universities',
-    'Interactive workshops on diplomacy and negotiation',
     'Networking opportunities with delegates nationwide',
     'Award ceremonies and recognition',
-    'Cultural evening and entertainment',
+    'Cultural and Social Interaction',
     'Professional photography and documentation',
   ];
 
@@ -371,18 +369,18 @@ export default function Home(): JSX.Element {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="ipad-force-mobile left-0 w-full z-50 bg-white/80 backdrop-filter backdrop-blur-lg shadow-sm"
+        className="ipad-force-mobile left-0 w-full z-50 bg-white/80 backdrop-filter backdrop-blur-lg shadow-sm fixed"
       >
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <Image src="/logo1.png" alt="DPS MUN Logo" width={48} height={48} className="rounded-full" />
-            <span className="text-2xl font-bold text-[#1A522A]">DPS MUN VIII</span>
+            <span className="text-2xl font-bold text-[#1A522A]">DPS MUN Jodhpur</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners', 'Timeline'].map((item) => (
+            {['Home', 'About', 'Committees', 'Secretariat', 'Timeline'].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -415,7 +413,7 @@ export default function Home(): JSX.Element {
               className="md:hidden bg-white border-t border-gray-200"
             >
               <div className="px-6 py-4 space-y-4">
-                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners', 'Timeline'].map((item) => (
+                {['Home', 'About', 'Committees', 'Secretariat', 'Timeline'].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
@@ -504,10 +502,7 @@ export default function Home(): JSX.Element {
                     <span className="text-sm font-medium text-gray-700">Committees</span>
                     <span className="text-sm text-[#1A522A] font-bold">9 Active</span>
                   </div>
-                  <div className="flex items-center justify-between p-3 bg-white/40 rounded-lg border border-white/20">
-                    <span className="text-sm font-medium text-gray-700">Awards</span>
-                    <span className="text-sm text-[#1A522A] font-bold">Multiple Categories</span>
-                  </div>
+                  
                   <div className="flex items-center justify-between p-3 bg-white/40 rounded-lg border border-white/20">
                     <span className="text-sm font-medium text-gray-700">Experience Level</span>
                     <span className="text-sm text-[#1A522A] font-bold">All Levels</span>
@@ -623,10 +618,9 @@ export default function Home(): JSX.Element {
                   <div className="bg-white/40 p-4 rounded-lg border border-white/20">
                     <h5 className="font-semibold text-[#1A522A] mb-2">Past Achievements</h5>
                     <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• 3,000+ delegates trained</li>
-                      <li>• 100+ schools participated</li>
-                      <li>• 45+ countries represented</li>
-                      <li>• 95% delegate satisfaction rate</li>
+                      <li>• 2,000+ delegates trained</li>
+                      <li>• 50+ schools participated</li>
+                      <li>• High delegate satisfaction rate</li>
                     </ul>
                   </div>
                 </div>
@@ -718,16 +712,6 @@ export default function Home(): JSX.Element {
                 >
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-bold text-[#1A522A]">{committee.short}</h3>
-                    <span
-                      className={`px-3 py-1 rounded-full text-xs font-semibold ${committee.level === 'Beginner'
-                        ? 'bg-green-100 text-green-800'
-                        : committee.level === 'Intermediate'
-                          ? 'bg-yellow-100 text-yellow-800'
-                          : 'bg-red-100 text-red-800'
-                        }`}
-                    >
-                      {committee.level}
-                    </span>
                   </div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-3">{committee.name}</h4>
                   <p className="text-gray-600 text-sm mb-4 leading-relaxed">{committee.description}</p>
@@ -773,7 +757,7 @@ export default function Home(): JSX.Element {
                 name: 'Aarav Jain',
                 post: 'Secretary General',
                 image: '/secretariat/aarav.jpeg',
-                bio: 'Oversees all committees and ensures diplomatic decorum is upheld.',
+                bio: 'Oversees and manages the Secretariat and ensures that team spirit is upheld.',
               },
               {
                 name: 'Kushagra Singh Deora',
@@ -877,52 +861,7 @@ export default function Home(): JSX.Element {
         </div>
       </section>
 
-      {/* Sponsors Section */}
-      <section id="event partners" className="py-20 pt-24 bg-white/90 backdrop-blur-md">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={fadeInUp}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1A522A] mb-2">Event Partners</h2>
-            <p className="text-base text-gray-600 max-w-xl mx-auto">
-              Trusted by leading brands that believe in the power of youth, diplomacy, and global discourse.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={staggerChildren}
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
-          >
-            {[
-              { name: 'DPS Jodhpur', logo: '/sponsors/dpsjodhpur.png' },
-            ].map((sponsor, index) => (
-              <motion.div
-                key={index}
-                variants={fadeInUp}
-                whileHover={{ scale: 1.03 }}
-                className="bg-white border border-gray-200 rounded-xl shadow-sm block items-center justify-center h-50 min-w-50 transition-all duration-300 p-4"
-              >
-                <div className="flex flex-col items-center justify-center">
-                  <Image
-                    src={sponsor.logo}
-                    alt={sponsor.name}
-                    width={100}
-                    height={60}
-                    className="object-contain h-25  "
-                  />
-                  <p className="text-[1.5em] text-shadow-2xs font-bold text-[#1A522A] mt-2 racing-sans-one-regular">{sponsor.name}</p></div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
+      
 
       {/* Timeline Section */}
       <section id="timeline" className="py-20 backdrop-filter backdrop-blur-md">
@@ -934,8 +873,8 @@ export default function Home(): JSX.Element {
             variants={fadeInUp}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1A522A] mb-6">Important Timeline</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">Stay updated with key dates and deadlines for DPS MUN VIII</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1A522A] mb-6">Timeline</h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">Stay updated with key dates and deadlines for DPS MUN Jodhpur 2025</p>
           </motion.div>
 
           <motion.div
@@ -991,7 +930,7 @@ export default function Home(): JSX.Element {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="flex flex-col items-center md:items-start">
             <div className="flex items-center space-x-3 mb-4">
               <Image src="/logo.png" alt="DPS MUN Logo" width={48} height={48} />
-              <h3 className="text-2xl font-bold">DPS MUN VIII</h3>
+              <h3 className="text-2xl font-bold">DPS MUN Jodhpur</h3>
             </div>
             <p className="text-white/80 text-sm">Shaping future diplomats</p>
           </motion.div>

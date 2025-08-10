@@ -1,6 +1,5 @@
-
-      {/* Sponsors Section */}
-      <section id="sponsors" className="py-20 bg-white/90 backdrop-blur-md">
+{/* Sponsors Section */}
+      <section id="event partners" className="py-20 pt-24 bg-white/90 backdrop-blur-md">
         <div className="container mx-auto px-6">
           <motion.div
             initial="hidden"
@@ -9,7 +8,7 @@
             variants={fadeInUp}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1A522A] mb-2">Sponsors & Partners</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1A522A] mb-2">Event Partners</h2>
             <p className="text-base text-gray-600 max-w-xl mx-auto">
               Trusted by leading brands that believe in the power of youth, diplomacy, and global discourse.
             </p>
@@ -23,25 +22,23 @@
             className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
           >
             {[
-              { name: 'Google', logo: '/sponsors/google.png' },
-              { name: 'Coca-Cola', logo: '/sponsors/coca-cola.png' },
-              { name: 'Amazon', logo: '/sponsors/amazon.png' },
-              { name: 'Microsoft', logo: '/sponsors/microsoft.png' },
-              { name: 'Nike', logo: '/sponsors/nike.png' },
+              { name: 'DPS Jodhpur', logo: '/sponsors/dpsjodhpur.png' },
             ].map((sponsor, index) => (
               <motion.div
                 key={index}
                 variants={fadeInUp}
                 whileHover={{ scale: 1.03 }}
-                className="bg-white border border-gray-200 rounded-xl shadow-sm p-4 flex items-center justify-center h-28 transition-all duration-300"
+                className="bg-white border border-gray-200 rounded-xl shadow-sm block items-center justify-center h-50 min-w-50 transition-all duration-300 p-4"
               >
-                <Image
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  width={100}
-                  height={60}
-                  className="object-contain h-16"
-                />
+                <div className="flex flex-col items-center justify-center">
+                  <Image
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    width={100}
+                    height={60}
+                    className="object-contain h-25  "
+                  />
+                  <p className="text-[1.5em] text-shadow-2xs font-bold text-[#1A522A] mt-2 racing-sans-one-regular">{sponsor.name}</p></div>
               </motion.div>
             ))}
           </motion.div>
