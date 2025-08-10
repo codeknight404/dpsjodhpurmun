@@ -810,12 +810,13 @@ export default function Home(): JSX.Element {
           >
             {[
               { name: 'Mudra Warde', post: 'USG EB Affairs', image: '/secretariat/mudra.jpeg' },
-              { name: 'Ayushi Chaudhary', post: 'USG EB Affairs & Marketing', image: '/secretariat/ayushi.jpeg' },
+              { name: 'Rachel C. Kujur', post: 'USG Literary', image: '/secretariat/rachel.jpeg' },
 
               { name: 'Harshal Sharma', post: 'USG IT', image: '/secretariat/harshal.jpeg' },
               { name: 'Kamlesh Suthar', post: 'USG Design', image: '/secretariat/kamlesh.jpeg' },
               { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
               { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
+              { name: 'Ayushi Chaudhary', post: 'USG EB Affairs & Marketing', image: '/secretariat/ayushi.jpeg' },
               
               
               { name: 'Abhinna Das', post: 'USG EB Affairs', image: '/secretariat/abhinna.jpeg' },
@@ -835,7 +836,7 @@ export default function Home(): JSX.Element {
               { name: 'Kritika Kalia', post: 'USG Marketing', image: '/secretariat/kritika.jpeg' },
               { name: 'Laxman Beniwal', post: 'USG Discipline', image: '/secretariat/laxman.jpeg' },
               { name: 'Srishti Hiranandani', post: 'USG Discipline', image: '/secretariat/shrishti.jpeg' },
-              { name: 'Rachel C. Kujur', post: 'USG Literary', image: '/secretariat/rachel.jpeg' },
+              
               { name: 'Kenjal Jain', post: 'USG Finance', image: '/secretariat/kenjal.jpeg' },
               { name: 'Rakshit Loonkar', post: 'USG Finance', image: '/secretariat/rakshit.jpeg' },
               { name: 'Gunnpreet Gulati', post: 'USG Transport & Catering', image: '/secretariat/gunnpreet.jpeg' },
