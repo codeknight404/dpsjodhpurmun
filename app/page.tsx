@@ -844,7 +844,7 @@ export default function Home(): JSX.Element {
               { name: 'Priyanshi Charan', post: 'USG Cultural', image: '/secretariat/priyanshi.jpeg' },
               { name: 'Kritika Kalia', post: 'USG Marketing', image: '/secretariat/kritika.jpeg' },
               { name: 'Laxman Beniwal', post: 'USG Discipline', image: '/secretariat/laxman.jpeg' },
-              { name: 'Shrishti Hiranandani', post: 'USG Discipline', image: '/secretariat/shrishti.jpeg' },
+              { name: 'Srishti Hiranandani', post: 'USG Discipline', image: '/secretariat/shrishti.jpeg' },
               { name: 'Rachel C. Kujur', post: 'USG Literary', image: '/secretariat/rachel.jpeg' },
               { name: 'Kenjal Jain', post: 'USG Finance', image: '/secretariat/kenjal.jpeg' },
               { name: 'Rakshit Loonkar', post: 'USG Finance', image: '/secretariat/rakshit.jpeg' },
