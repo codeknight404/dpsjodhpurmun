@@ -879,7 +879,7 @@ export default function Home(): JSX.Element {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-[#1A522A] mb-2">Event Partners</h2>
             <p className="text-base text-gray-600 max-w-xl mx-auto">
-              Trusted by leading brands that believe in the power of youth, diplomacy, and global discourse.
+              Trusted by leading institutions that believe in the power of youth, diplomacy, and global discourse.
             </p>
           </motion.div>
 
