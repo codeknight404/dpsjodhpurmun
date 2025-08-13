@@ -1006,7 +1006,7 @@ export default function Home(): JSX.Element {
                 <MapPin className="w-5 h-5 mr-2" />
                 <span>Delhi Public School, Jodhpur</span>
               </li>
-              <li className="flex items-center justify-center md:justify-start">
+              <li href='mailto:queries.dpsjodhpurmun@gmail.com' className="flex items-center justify-center md:justify-start">
                 <Mail className="w-5 h-5 mr-2" />
                 <span>queries.dpsjodhpurmun@gmail.com</span>
               </li>
