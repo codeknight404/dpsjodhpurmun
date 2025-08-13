@@ -543,6 +543,18 @@ export default function Home(): JSX.Element {
           </motion.div>
         </div>
       </section>
+      <header className="w-full bg-white shadow-md">
+      <div className="max-w-6xl mx-auto p-4">
+        <Image
+          src="/banner.png" // put your .png file in public/banner.png
+          alt="Site Banner"
+          width={1200}
+          height={300}
+          className="w-full h-auto rounded-lg"
+          priority
+        />
+      </div>
+    </header>
 
       {/* About Section */}
       <section id="about" className="py-20 backdrop-filter backdrop-blur-md">
