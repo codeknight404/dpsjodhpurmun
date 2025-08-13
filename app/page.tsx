@@ -577,7 +577,18 @@ export default function Home(): JSX.Element {
         </div>
       </section>
 
-
+            <header className="w-full bg-white shadow-md">
+      <div className="mx-auto">
+        <Image
+          src="/banner.png" // put your .png file in public/banner.png
+          alt="Site Banner"
+          width={1200}
+          height={300}
+          className="w-full h-auto"
+          priority
+        />
+      </div>
+    </header>
       {/* About Section */}
       <section id="about" className="py-20 backdrop-filter backdrop-blur-md">
         <div className="mt-20 container mx-auto px-6">
@@ -847,36 +858,28 @@ export default function Home(): JSX.Element {
 
               { name: 'Harshal Sharma', post: 'USG IT', image: '/secretariat/harshal.jpeg' },
               { name: 'Bhavya Mutha', post: 'USG IT', image: '/secretariat/bhavyam.jpeg' },
-
-              
-              
               { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
-              { name: 'Mudra Warde', post: 'USG EB Affairs', image: '/secretariat/mudra.jpeg' },
-              { name: 'Ayushi Chaudhary', post: 'USG EB Affairs', image: '/secretariat/ayushi.jpeg' },
-              
-              { name: 'Rachel C. Kujur', post: 'USG Literary', image: '/secretariat/rachel.jpeg' },
-
-
-              { name: 'Abhinna Das', post: 'USG EB Affairs', image: '/secretariat/abhinna.jpeg' },
-
-              { name: 'Pratha Bhardwaj', post: 'USG Delegate Affairs', image: '/secretariat/pratha.jpeg' },
-              { name: 'Rupeksha Rajpurohit', post: 'USG Delegate Affairs', image: '/secretariat/rupeksha.jpeg' },
-              { name: 'Vinay Chhugani', post: 'USG Delegate Affairs', image: '/secretariat/vinay.jpeg' },
-
-              { name: 'Prachi Shah', post: 'USG IT', image: '/secretariat/prachi.jpeg' },
-              { name: 'Krishna Dhoot', post: 'USG IT', image: '/secretariat/krishna.jpeg' },
-              { name: 'Teesha Garg', post: 'USG Social Media', image: '/secretariat/teesha.jpeg' },
-              
 
               { name: 'Moulik Lodha', post: 'USG Cultural', image: '/secretariat/moulik.jpeg' },
               { name: 'Charvi Maheshwari', post: 'USG Cultural', image: '/secretariat/charvi.jpeg' },
-              { name: 'Priyanshi Charan', post: 'USG Cultural', image: '/secretariat/priyanshi.jpeg' },
-              { name: 'Kritika Kalia', post: 'USG Marketing', image: '/secretariat/kritika.jpeg' },
-              { name: 'Laxman Beniwal', post: 'USG Discipline', image: '/secretariat/laxman.jpeg' },
-              { name: 'Srishti Hiranandani', post: 'USG Discipline', image: '/secretariat/shrishti.jpeg' },
-
+              { name: 'Priyanshi Charan', post: 'USG Cultural', image: '/secretariat/priyanshi.jpeg' },    
+              { name: 'Kritika Kalia', post: 'USG Marketing', image: '/secretariat/kritika.jpeg' },                      
+              { name: 'Mudra Warde', post: 'USG EB Affairs', image: '/secretariat/mudra.jpeg' },
+              { name: 'Ayushi Chaudhary', post: 'USG EB Affairs', image: '/secretariat/ayushi.jpeg' },
+              
+              { name: 'Abhinna Das', post: 'USG EB Affairs', image: '/secretariat/abhinna.jpeg' },
+              { name: 'Pratha Bhardwaj', post: 'USG Delegate Affairs', image: '/secretariat/pratha.jpeg' },
+              { name: 'Rupeksha Rajpurohit', post: 'USG Delegate Affairs', image: '/secretariat/rupeksha.jpeg' },
+              { name: 'Vinay Chhugani', post: 'USG Delegate Affairs', image: '/secretariat/vinay.jpeg' },
+              { name: 'Rachel C. Kujur', post: 'USG Literary', image: '/secretariat/rachel.jpeg' },
+              { name: 'Prachi Shah', post: 'USG IT', image: '/secretariat/prachi.jpeg' },
+              { name: 'Krishna Dhoot', post: 'USG IT', image: '/secretariat/krishna.jpeg' },
               { name: 'Kenjal Jain', post: 'USG Finance', image: '/secretariat/kenjal.jpeg' },
               { name: 'Rakshit Loonkar', post: 'USG Finance', image: '/secretariat/rakshit.jpeg' },
+              { name: 'Teesha Garg', post: 'USG Social Media', image: '/secretariat/teesha.jpeg' },
+              { name: 'Laxman Beniwal', post: 'USG Discipline', image: '/secretariat/laxman.jpeg' },
+              { name: 'Srishti Hiranandani', post: 'USG Discipline', image: '/secretariat/shrishti.jpeg' },
+              
               { name: 'Gunnpreet Gulati', post: 'USG Transport', image: '/secretariat/gunnpreet.jpeg' },
               { name: 'Samarth Vasu', post: 'USG Catering', image: '/secretariat/samarth.jpeg' },
               { name: 'Bhavya Tiwari', post: 'USG Decoration', image: '/secretariat/bhavya.jpeg' },
