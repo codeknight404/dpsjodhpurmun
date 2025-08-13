@@ -230,7 +230,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations Commission Of Status Of Women',
       short: 'UNCSW',
       description: 'The principal UN body dedicated to promoting gender equality and the empowerment of women.',
-      
+
       delegates: 40,
       agenda: 'ADDRESSING GENDER-BASED ECONOMIC INEQUALITIES- A CRITICAL EVALUATION OF THE PINK TAX AND ITS IMPACT ON WOMEN\'S FINANCIAL EQUALITY',
       chairpersons: ['Revealing Soon'],
@@ -241,7 +241,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations General Assembly First Committee',
       short: 'DISEC',
       description: 'The UN General Assembly\'s main committee for disarmament and international security matters.',
-      
+
       delegates: 40,
       agenda: 'WARFARE 2.0: ADDRESSING EMERGING THREATS AND REDEFINING WAR CRIMES IN THE CONTEXT OF CYBER WARFARE AND DIGITAL CONFLICT',
       chairpersons: ['Revealing Soon'],
@@ -252,7 +252,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations Security Council',
       short: 'UNSC',
       description: 'The primary UN body responsible for maintaining international peace and security.',
-      
+
       delegates: 30,
       agenda: 'DELIBERATION ON RISING TENSIONS BETWEEN ISRAEL AND IRAN AND STRATEGIES FOR DE-ESCALATION.',
       chairpersons: ['Revealing Soon'],
@@ -263,7 +263,7 @@ export default function Home(): JSX.Element {
       name: 'Historical Crisis Committee',
       short: 'HCC',
       description: 'Simulates a historical body to address and resolve a crisis from the past.',
-      
+
       delegates: 50,
       agenda: 'DIPLOMATIC REFLECTIONS ON THE 1999 KARGIL WAR AND ITS ENDURING INFLUENCE ON INDO-PAK RELATIONS AND INDIA\’S FOREIGN POLICY',
       chairpersons: ['Revealing Soon'],
@@ -274,7 +274,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations Human Rights Council',
       short: 'UNHRC',
       description: 'The UN body responsible for the promotion and protection of all human rights around the globe.',
-      
+
       delegates: 50,
       agenda: 'PROMOTING AND PROTECTING FREEDOM OF THE PRESS AND THE SAFETY OF JOURNALISTS AMID RISING AUTHORITARIANISM',
       chairpersons: ['Revealing Soon'],
@@ -285,7 +285,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations International Children\'s Emergency Fund',
       short: 'UNICEF',
       description: 'The UN agency responsible for providing humanitarian and developmental aid to children worldwide.',
-      
+
       delegates: 30,
       agenda: 'ACCELERATING GLOBAL ACTION TO END PREVENTABLE CHILD DEATHS BY 2030',
       chairpersons: ['Revealing Soon'],
@@ -296,7 +296,7 @@ export default function Home(): JSX.Element {
       name: 'Lok Sabha',
       short: 'Lok Sabha',
       description: 'The lower house of the Indian Parliament, where national laws and policies are debated and enacted.',
-      
+
       delegates: 140,
       agenda: 'DELIBERATION ON COMPREHENSIVE ELECTORAL REFORMS WITH SPECIAL EMPHASIS ON THE CRIMINALISATION OF POLITICS IN INDIA',
       chairpersons: ['Revealing Soon'],
@@ -307,7 +307,7 @@ export default function Home(): JSX.Element {
       name: 'International Court Of Justice',
       short: 'ICJ',
       description: 'The principal judicial organ of the UN, settling legal disputes between states.',
-      
+
       delegates: 30,
       agenda: 'EXAMINING THE LEGAL CONSEQUENCES OF CONFLICTS BETWEEN DOMESTIC LEGISLATION AND INTERNATIONAL TREATY OBLIGATIONS WITH SPECIAL EMPHASIS ON THE JUDICIAL PRECEDENTS INCLUDING BREARD V. GREENE AND THE NORTH SEA CONTINENTAL SHELF CASES',
       chairpersons: ['Revealing Soon'],
@@ -318,7 +318,7 @@ export default function Home(): JSX.Element {
       name: 'International Press',
       short: 'IP',
       description: 'A simulation of journalists and media outlets who report on the proceedings of all other committees.',
-      
+
       delegates: 30,
       agenda: 'JOURNALISM | PHOTOGRAPHY | CINEMATOGRAPHY | CARICATURE',
       chairpersons: ['Revealing Soon'],
@@ -380,7 +380,7 @@ export default function Home(): JSX.Element {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Committees', 'Secretariat','Event Partners', 'Timeline'].map((item) => (
+            {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners', 'Timeline'].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -394,7 +394,14 @@ export default function Home(): JSX.Element {
 
           {/* Desktop Auth Buttons: Use the AuthNavButtons component */}
           <div className="hidden md:flex">
-
+            <Link
+              href="https://forms.gle/L7qS7NniAM3Y4zP3A"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-6 py-2 bg-[#1A522A] text-white rounded-full hover:bg-[#2E8B57] transition-colors"
+            >
+              Register Now
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -413,7 +420,7 @@ export default function Home(): JSX.Element {
               className="md:hidden bg-white border-t border-gray-200"
             >
               <div className="px-6 py-4 space-y-4">
-                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners','Timeline'].map((item) => (
+                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners', 'Timeline'].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
@@ -425,6 +432,14 @@ export default function Home(): JSX.Element {
                 ))}
                 <div className="pt-4 border-t border-gray-200 space-y-2">
                   {/* Mobile Auth Buttons: Use AuthNavButtons here too */}
+                  <Link
+                    href="https://forms.gle/L7qS7NniAM3Y4zP3A"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-2 bg-[#1A522A] text-white rounded-full hover:bg-[#2E8B57] transition-colors"
+                  >
+                    Register Now
+                  </Link>
 
                 </div>
               </div>
@@ -453,19 +468,37 @@ export default function Home(): JSX.Element {
                 Join us for an extraordinary diplomatic experience at Delhi Public School Jodhpur&apos;s flagship Model United Nations
                 conference. Where young minds shape the future through debate, diplomacy, and international cooperation.
               </motion.p>
+              <div className="flex gap-5 justify-center lg:justify-start">
+                <motion.div variants={fadeInUp}>
+                  <Link
+                    href="https://forms.gle/L7qS7NniAM3Y4zP3A"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                      <Button
+                        variant="outline"
+                        className="border-2 bg-white text-[#1A522A] border-[#1A522A] hover:bg-[#1A522A] hover:text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
+                      >
+                        Register
+                      </Button>
+                    </motion.div>
+                  </Link>
+                </motion.div>
 
-              <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link href="#about">
-                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                    <Button
-                      variant="outline"
-                      className="border-2 border-[#1A522A] text-[#1A522A] hover:bg-[#1A522A] hover:text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
-                    >
-                      Learn More
-                    </Button>
-                  </motion.div>
-                </Link>
-              </motion.div>
+                <motion.div variants={fadeInUp}>
+                  <Link href="#about">
+                    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                      <Button
+                        variant="outline"
+                        className="border-2 bg-white text-[#1A522A] border-[#1A522A] hover:bg-[#1A522A] hover:text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
+                      >
+                        Learn More
+                      </Button>
+                    </motion.div>
+                  </Link>
+                </motion.div>
+              </div>
 
               {/* Quick Info */}
               <motion.div variants={fadeInUp} className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center lg:text-left">
@@ -502,7 +535,7 @@ export default function Home(): JSX.Element {
                     <span className="text-sm font-medium text-gray-700">Committees</span>
                     <span className="text-sm text-[#1A522A] font-bold">9 Active</span>
                   </div>
-                  
+
                   <div className="flex items-center justify-between p-3 bg-white/40 rounded-lg border border-white/20">
                     <span className="text-sm font-medium text-gray-700">Experience Level</span>
                     <span className="text-sm text-[#1A522A] font-bold">All Levels</span>
@@ -543,7 +576,7 @@ export default function Home(): JSX.Element {
           </motion.div>
         </div>
       </section>
-     
+
 
       {/* About Section */}
       <section id="about" className="py-20 backdrop-filter backdrop-blur-md">
@@ -818,26 +851,26 @@ export default function Home(): JSX.Element {
               { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
               { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
               { name: 'Ayushi Chaudhary', post: 'USG EB Affairs', image: '/secretariat/ayushi.jpeg' },
-              
-              
+
+
               { name: 'Abhinna Das', post: 'USG EB Affairs', image: '/secretariat/abhinna.jpeg' },
-              
+
               { name: 'Pratha Bhardwaj', post: 'USG Delegate Affairs', image: '/secretariat/pratha.jpeg' },
               { name: 'Rupeksha Rajpurohit', post: 'USG Delegate Affairs', image: '/secretariat/rupeksha.jpeg' },
               { name: 'Vinay Chhugani', post: 'USG Delegate Affairs', image: '/secretariat/vinay.jpeg' },
-              
+
               { name: 'Prachi Shah', post: 'USG IT', image: '/secretariat/prachi.jpeg' },
               { name: 'Krishna Dhoot', post: 'USG IT', image: '/secretariat/krishna.jpeg' },
               { name: 'Teesha Garg', post: 'USG Social Media', image: '/secretariat/teesha.jpeg' },
               { name: 'Kavya Anchalia', post: 'USG Social Media', image: '/secretariat/kavya.jpeg' },
-              
+
               { name: 'Moulik Lodha', post: 'USG Cultural', image: '/secretariat/moulik.jpeg' },
               { name: 'Charvi Maheshwari', post: 'USG Cultural', image: '/secretariat/charvi.jpeg' },
               { name: 'Priyanshi Charan', post: 'USG Cultural', image: '/secretariat/priyanshi.jpeg' },
               { name: 'Kritika Kalia', post: 'USG Marketing', image: '/secretariat/kritika.jpeg' },
               { name: 'Laxman Beniwal', post: 'USG Discipline', image: '/secretariat/laxman.jpeg' },
               { name: 'Srishti Hiranandani', post: 'USG Discipline', image: '/secretariat/shrishti.jpeg' },
-              
+
               { name: 'Kenjal Jain', post: 'USG Finance', image: '/secretariat/kenjal.jpeg' },
               { name: 'Rakshit Loonkar', post: 'USG Finance', image: '/secretariat/rakshit.jpeg' },
               { name: 'Gunnpreet Gulati', post: 'USG Transport', image: '/secretariat/gunnpreet.jpeg' },
@@ -868,7 +901,7 @@ export default function Home(): JSX.Element {
 
         </div>
       </section>
-            {/* Sponsors Section */}
+      {/* Sponsors Section */}
       <section id="event partners" className="py-20 pt-24 bg-white/90 backdrop-blur-md">
         <div className="container mx-auto px-6">
           <motion.div
@@ -914,7 +947,7 @@ export default function Home(): JSX.Element {
           </motion.div>
         </div>
       </section>
-      
+
 
       {/* Timeline Section */}
       <section id="timeline" className="py-20 backdrop-filter backdrop-blur-md">
@@ -972,7 +1005,7 @@ export default function Home(): JSX.Element {
           </motion.div>
         </div>
       </section>
- 
+
 
 
       {/* Footer */}
@@ -1009,7 +1042,7 @@ export default function Home(): JSX.Element {
               <li className="flex items-center justify-center md:justify-start">
                 <Mail className="w-5 h-5 mr-2" />
                 <Link href='mailto:queries.dpsjodhpurmun@gmail.com'>
-                <span>queries.dpsjodhpurmun@gmail.com</span></Link>
+                  <span>queries.dpsjodhpurmun@gmail.com</span></Link>
               </li>
             </ul>
           </motion.div>
