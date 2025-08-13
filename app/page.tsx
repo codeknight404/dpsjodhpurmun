@@ -544,12 +544,12 @@ export default function Home(): JSX.Element {
         </div>
       </section>
       <header className="w-full bg-white shadow-md">
-      <div className="max-w-6xl mx-auto">
+      <div className="mx-auto">
         <Image
           src="/banner.png" // put your .png file in public/banner.png
           alt="Site Banner"
-          width={1980}
-          height={400}
+          width={1200}
+          height={300}
           className="w-full h-auto"
           priority
         />
