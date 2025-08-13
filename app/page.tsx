@@ -543,6 +543,7 @@ export default function Home(): JSX.Element {
           </motion.div>
         </div>
       </section>
+     
 
       {/* About Section */}
       <section id="about" className="py-20 backdrop-filter backdrop-blur-md">
@@ -971,8 +972,7 @@ export default function Home(): JSX.Element {
           </motion.div>
         </div>
       </section>
-
-
+ 
 
 
       {/* Footer */}
@@ -1008,7 +1008,8 @@ export default function Home(): JSX.Element {
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <Mail className="w-5 h-5 mr-2" />
-                <span>queries.dpsjodhpurmun@gmail.com</span>
+                <Link href='mailto:queries.dpsjodhpurmun@gmail.com'>
+                <span>queries.dpsjodhpurmun@gmail.com</span></Link>
               </li>
             </ul>
           </motion.div>
