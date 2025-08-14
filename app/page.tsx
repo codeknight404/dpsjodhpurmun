@@ -4,8 +4,9 @@ import React, { useState, useEffect, JSX } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button'; // Assuming this path is correct for your Button component
 import { motion, AnimatePresence, Variants, easeInOut } from 'framer-motion';
+import "swiper/css";
+import "swiper/css/navigation";
 import {
-  Globe,
   Users,
   Calendar,
   Trophy,
@@ -24,6 +25,7 @@ import {
   UserCheck,
 } from 'lucide-react';
 import Image from 'next/image';
+import InstagramReelCard from '@/components/reels'; // Adjust the import path as necessary
 
 // Animation variants
 const fadeInUp = {
@@ -118,6 +120,8 @@ interface CommitteeDetailModalProps {
   onClose: () => void;
 }
 
+
+
 const CommitteeDetailModal: React.FC<CommitteeDetailModalProps> = ({ committee, onClose }) => {
   return (
     <motion.div
@@ -195,7 +199,8 @@ export default function Home(): JSX.Element {
   const [isLoaded, setIsLoaded] = useState(false);
   const [selectedCommittee, setSelectedCommittee] = useState<Committee | null>(null);
   const [activeCommitteeType, setActiveCommitteeType] = useState<'All' | 'International' | 'National'>('All'); // New state for filtering
-   const reels = [
+
+  const reels = [
     {
       videoSrc: "/social/reel1.mp4",
       thumbnail: "/social/reel1-thumb.jpg",
@@ -228,7 +233,7 @@ export default function Home(): JSX.Element {
       const scrollPosition = window.scrollY + 100;
 
       sections.forEach((section) => {
-        const element = document.getElementById(section);
+        const element = document.getElementById(section) ;
         if (element) {
           const { offsetTop, offsetHeight } = element;
           if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
@@ -254,7 +259,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations Commission Of Status Of Women',
       short: 'UNCSW',
       description: 'The principal UN body dedicated to promoting gender equality and the empowerment of women.',
-
+      
       delegates: 40,
       agenda: 'ADDRESSING GENDER-BASED ECONOMIC INEQUALITIES- A CRITICAL EVALUATION OF THE PINK TAX AND ITS IMPACT ON WOMEN\'S FINANCIAL EQUALITY',
       chairpersons: ['Revealing Soon'],
@@ -265,7 +270,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations General Assembly First Committee',
       short: 'DISEC',
       description: 'The UN General Assembly\'s main committee for disarmament and international security matters.',
-
+      
       delegates: 40,
       agenda: 'WARFARE 2.0: ADDRESSING EMERGING THREATS AND REDEFINING WAR CRIMES IN THE CONTEXT OF CYBER WARFARE AND DIGITAL CONFLICT',
       chairpersons: ['Revealing Soon'],
@@ -276,7 +281,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations Security Council',
       short: 'UNSC',
       description: 'The primary UN body responsible for maintaining international peace and security.',
-
+      
       delegates: 30,
       agenda: 'DELIBERATION ON RISING TENSIONS BETWEEN ISRAEL AND IRAN AND STRATEGIES FOR DE-ESCALATION.',
       chairpersons: ['Revealing Soon'],
@@ -287,7 +292,7 @@ export default function Home(): JSX.Element {
       name: 'Historical Crisis Committee',
       short: 'HCC',
       description: 'Simulates a historical body to address and resolve a crisis from the past.',
-
+      
       delegates: 50,
       agenda: 'DIPLOMATIC REFLECTIONS ON THE 1999 KARGIL WAR AND ITS ENDURING INFLUENCE ON INDO-PAK RELATIONS AND INDIA\’S FOREIGN POLICY',
       chairpersons: ['Revealing Soon'],
@@ -298,7 +303,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations Human Rights Council',
       short: 'UNHRC',
       description: 'The UN body responsible for the promotion and protection of all human rights around the globe.',
-
+      
       delegates: 50,
       agenda: 'PROMOTING AND PROTECTING FREEDOM OF THE PRESS AND THE SAFETY OF JOURNALISTS AMID RISING AUTHORITARIANISM',
       chairpersons: ['Revealing Soon'],
@@ -309,7 +314,7 @@ export default function Home(): JSX.Element {
       name: 'United Nations International Children\'s Emergency Fund',
       short: 'UNICEF',
       description: 'The UN agency responsible for providing humanitarian and developmental aid to children worldwide.',
-
+      
       delegates: 30,
       agenda: 'ACCELERATING GLOBAL ACTION TO END PREVENTABLE CHILD DEATHS BY 2030',
       chairpersons: ['Revealing Soon'],
@@ -320,7 +325,7 @@ export default function Home(): JSX.Element {
       name: 'Lok Sabha',
       short: 'Lok Sabha',
       description: 'The lower house of the Indian Parliament, where national laws and policies are debated and enacted.',
-
+      
       delegates: 140,
       agenda: 'DELIBERATION ON COMPREHENSIVE ELECTORAL REFORMS WITH SPECIAL EMPHASIS ON THE CRIMINALISATION OF POLITICS IN INDIA',
       chairpersons: ['Revealing Soon'],
@@ -331,7 +336,7 @@ export default function Home(): JSX.Element {
       name: 'International Court Of Justice',
       short: 'ICJ',
       description: 'The principal judicial organ of the UN, settling legal disputes between states.',
-
+      
       delegates: 30,
       agenda: 'EXAMINING THE LEGAL CONSEQUENCES OF CONFLICTS BETWEEN DOMESTIC LEGISLATION AND INTERNATIONAL TREATY OBLIGATIONS WITH SPECIAL EMPHASIS ON THE JUDICIAL PRECEDENTS INCLUDING BREARD V. GREENE AND THE NORTH SEA CONTINENTAL SHELF CASES',
       chairpersons: ['Revealing Soon'],
@@ -342,7 +347,7 @@ export default function Home(): JSX.Element {
       name: 'International Press',
       short: 'IP',
       description: 'A simulation of journalists and media outlets who report on the proceedings of all other committees.',
-
+      
       delegates: 30,
       agenda: 'JOURNALISM | PHOTOGRAPHY | CINEMATOGRAPHY | CARICATURE',
       chairpersons: ['Revealing Soon'],
@@ -404,7 +409,7 @@ export default function Home(): JSX.Element {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners', 'Social-Media', 'Timeline'].map((item) => (
+            {['Home', 'About', 'Committees', 'Secretariat','Event Partners', 'Timeline'].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -418,14 +423,7 @@ export default function Home(): JSX.Element {
 
           {/* Desktop Auth Buttons: Use the AuthNavButtons component */}
           <div className="hidden md:flex">
-            <Link
-              href="https://forms.gle/L7qS7NniAM3Y4zP3A"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-6 py-2 bg-[#1A522A] text-white rounded-full hover:bg-[#2E8B57] transition-colors"
-            >
-              Register Now
-            </Link>
+
           </div>
 
           {/* Mobile Menu Button */}
@@ -444,7 +442,7 @@ export default function Home(): JSX.Element {
               className="md:hidden bg-white border-t border-gray-200"
             >
               <div className="px-6 py-4 space-y-4">
-                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners','Social-Media', 'Timeline'].map((item) => (
+                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners','Timeline'].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
@@ -456,14 +454,6 @@ export default function Home(): JSX.Element {
                 ))}
                 <div className="pt-4 border-t border-gray-200 space-y-2">
                   {/* Mobile Auth Buttons: Use AuthNavButtons here too */}
-                  <Link
-                    href="https://forms.gle/L7qS7NniAM3Y4zP3A"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-6 py-2 bg-[#1A522A] text-white rounded-full hover:bg-[#2E8B57] transition-colors"
-                  >
-                    Register Now
-                  </Link>
 
                 </div>
               </div>
@@ -492,37 +482,19 @@ export default function Home(): JSX.Element {
                 Join us for an extraordinary diplomatic experience at Delhi Public School Jodhpur&apos;s flagship Model United Nations
                 conference. Where young minds shape the future through debate, diplomacy, and international cooperation.
               </motion.p>
-              <div className="flex gap-5 justify-center lg:justify-start">
-                <motion.div variants={fadeInUp}>
-                  <Link
-                    href="https://forms.gle/L7qS7NniAM3Y4zP3A"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                      <Button
-                        variant="outline"
-                        className="border-2 bg-white text-[#1A522A] border-[#1A522A] hover:bg-[#1A522A] hover:text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
-                      >
-                        Register
-                      </Button>
-                    </motion.div>
-                  </Link>
-                </motion.div>
 
-                <motion.div variants={fadeInUp}>
-                  <Link href="#about">
-                    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                      <Button
-                        variant="outline"
-                        className="border-2 bg-white text-[#1A522A] border-[#1A522A] hover:bg-[#1A522A] hover:text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
-                      >
-                        Learn More
-                      </Button>
-                    </motion.div>
-                  </Link>
-                </motion.div>
-              </div>
+              <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Link href="#about">
+                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                    <Button
+                      variant="outline"
+                      className="border-2 border-[#1A522A] text-[#1A522A] hover:bg-[#1A522A] hover:text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
+                    >
+                      Learn More
+                    </Button>
+                  </motion.div>
+                </Link>
+              </motion.div>
 
               {/* Quick Info */}
               <motion.div variants={fadeInUp} className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center lg:text-left">
@@ -559,7 +531,7 @@ export default function Home(): JSX.Element {
                     <span className="text-sm font-medium text-gray-700">Committees</span>
                     <span className="text-sm text-[#1A522A] font-bold">9 Active</span>
                   </div>
-
+                  
                   <div className="flex items-center justify-between p-3 bg-white/40 rounded-lg border border-white/20">
                     <span className="text-sm font-medium text-gray-700">Experience Level</span>
                     <span className="text-sm text-[#1A522A] font-bold">All Levels</span>
@@ -601,18 +573,6 @@ export default function Home(): JSX.Element {
         </div>
       </section>
 
-            <header className="w-full bg-white shadow-md">
-      <div className="mx-auto">
-        <Image
-          src="/banner.png" // put your .png file in public/banner.png
-          alt="Site Banner"
-          width={1200}
-          height={300}
-          className="w-full h-auto"
-          priority
-        />
-      </div>
-    </header>
       {/* About Section */}
       <section id="about" className="py-20 backdrop-filter backdrop-blur-md">
         <div className="mt-20 container mx-auto px-6">
@@ -878,37 +838,39 @@ export default function Home(): JSX.Element {
             className="flex gap-8 overflow-x-auto overflow-y-hidden pb-4 scroll-smooth snap-x snap-mandatory scrollbar-show"
           >
             {[
-              { name: 'Kamlesh Suthar', post: 'USG Design', image: '/secretariat/kamlesh.jpeg' },
+              { name: 'Mudra Warde', post: 'USG EB Affairs', image: '/secretariat/mudra.jpeg' },
+              { name: 'Rachel C. Kujur', post: 'USG Literary', image: '/secretariat/rachel.jpeg' },
 
               { name: 'Harshal Sharma', post: 'USG IT', image: '/secretariat/harshal.jpeg' },
-              { name: 'Bhavya Mutha', post: 'USG IT', image: '/secretariat/bhavyam.jpeg' },
+              { name: 'Kamlesh Suthar', post: 'USG Design', image: '/secretariat/kamlesh.jpeg' },
+              { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
               { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
-
-              { name: 'Moulik Lodha', post: 'USG Cultural', image: '/secretariat/moulik.jpeg' },
-              { name: 'Charvi Maheshwari', post: 'USG Cultural', image: '/secretariat/charvi.jpeg' },
-              { name: 'Priyanshi Charan', post: 'USG Cultural', image: '/secretariat/priyanshi.jpeg' },    
-              { name: 'Kritika Kalia', post: 'USG Marketing', image: '/secretariat/kritika.jpeg' },                      
-              { name: 'Mudra Warde', post: 'USG EB Affairs', image: '/secretariat/mudra.jpeg' },
-              { name: 'Ayushi Chaudhary', post: 'USG EB Affairs', image: '/secretariat/ayushi.jpeg' },
+              { name: 'Ayushi Chaudhary', post: 'USG Marketing', image: '/secretariat/ayushi.jpeg' },
+              
               
               { name: 'Abhinna Das', post: 'USG EB Affairs', image: '/secretariat/abhinna.jpeg' },
+              
               { name: 'Pratha Bhardwaj', post: 'USG Delegate Affairs', image: '/secretariat/pratha.jpeg' },
               { name: 'Rupeksha Rajpurohit', post: 'USG Delegate Affairs', image: '/secretariat/rupeksha.jpeg' },
               { name: 'Vinay Chhugani', post: 'USG Delegate Affairs', image: '/secretariat/vinay.jpeg' },
-              { name: 'Rachel C. Kujur', post: 'USG Literary', image: '/secretariat/rachel.jpeg' },
+              
               { name: 'Prachi Shah', post: 'USG IT', image: '/secretariat/prachi.jpeg' },
               { name: 'Krishna Dhoot', post: 'USG IT', image: '/secretariat/krishna.jpeg' },
-              { name: 'Kenjal Jain', post: 'USG Finance', image: '/secretariat/kenjal.jpeg' },
-              { name: 'Rakshit Loonkar', post: 'USG Finance', image: '/secretariat/rakshit.jpeg' },
               { name: 'Teesha Garg', post: 'USG Social Media', image: '/secretariat/teesha.jpeg' },
+              { name: 'Kavya Anchalia', post: 'USG Social Media', image: '/secretariat/kavya.jpeg' },
+              
+              { name: 'Moulik Lodha', post: 'USG Cultural', image: '/secretariat/moulik.jpeg' },
+              { name: 'Charvi Maheshwari', post: 'USG Cultural', image: '/secretariat/charvi.jpeg' },
+              { name: 'Priyanshi Charan', post: 'USG Cultural', image: '/secretariat/priyanshi.jpeg' },
+              { name: 'Kritika Kalia', post: 'USG Marketing', image: '/secretariat/kritika.jpeg' },
               { name: 'Laxman Beniwal', post: 'USG Discipline', image: '/secretariat/laxman.jpeg' },
               { name: 'Srishti Hiranandani', post: 'USG Discipline', image: '/secretariat/shrishti.jpeg' },
               
+              { name: 'Kenjal Jain', post: 'USG Finance', image: '/secretariat/kenjal.jpeg' },
+              { name: 'Rakshit Loonkar', post: 'USG Finance', image: '/secretariat/rakshit.jpeg' },
               { name: 'Gunnpreet Gulati', post: 'USG Transport', image: '/secretariat/gunnpreet.jpeg' },
               { name: 'Samarth Vasu', post: 'USG Catering', image: '/secretariat/samarth.jpeg' },
               { name: 'Bhavya Tiwari', post: 'USG Decoration', image: '/secretariat/bhavya.jpeg' },
-              { name: 'Kavya Anchalia', post: 'USG Social Media', image: '/secretariat/kavya.jpeg' },
-              { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
             ].map((member, index) => (
               <motion.div
                 key={index}
@@ -934,7 +896,7 @@ export default function Home(): JSX.Element {
 
         </div>
       </section>
-      {/* Sponsors Section */}
+            {/* Sponsors Section */}
       <section id="event partners" className="py-20 pt-24 bg-white/90 backdrop-blur-md">
         <div className="container mx-auto px-6">
           <motion.div
@@ -980,7 +942,7 @@ export default function Home(): JSX.Element {
           </motion.div>
         </div>
       </section>
-<section
+         <section
          id="social-media"
   className="
     overflow-y-scroll 
@@ -992,7 +954,42 @@ export default function Home(): JSX.Element {
   "
 >
 </section>
+<div className="container mx-auto px-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInUp}
+            className="text-center mb-12"
+          >
+<h2 className="text-4xl md:text-5xl font-bold text-[#1A522A] m-10">Social Media</h2>
+<p className="text-base text-gray-600 max-w-xl mb-10 mx-auto">
+              Trusted by leading institutions that believe in the power of youth, diplomacy, and global discourse.
+            </p>
 
+            <div className="relative w-full max-w-md h-[100vh] mx-auto overflow-hidden rounded-xl bg-black">
+      {/* Current Reel */}
+      <div className="w-full h-full">
+        <InstagramReelCard {...reels[currentIndex]} />
+      </div>
+
+      {/* Up arrow */}
+      <button
+        onClick={prevReel}
+        className="absolute top-4 left-1/2 -translate-x-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full"
+      >
+        ↑
+      </button>
+
+      {/* Down arrow */}
+      <button
+        onClick={nextReel}
+        className="absolute bottom-4 text-3xl left-1/2 -translate-x-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full"
+      >
+        ↓
+      </button>
+    </div>
+</motion.div></div>
       {/* Timeline Section */}
       <section id="timeline" className="py-20 backdrop-filter backdrop-blur-md">
         <div className="mt-20 container mx-auto px-6">
@@ -1052,6 +1049,7 @@ export default function Home(): JSX.Element {
 
 
 
+
       {/* Footer */}
       <footer className="bg-[#1A522A] text-white py-12">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
@@ -1085,8 +1083,7 @@ export default function Home(): JSX.Element {
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <Mail className="w-5 h-5 mr-2" />
-                <Link href='mailto:queries.dpsjodhpurmun@gmail.com'>
-                  <span>queries.dpsjodhpurmun@gmail.com</span></Link>
+                <span>queries.dpsjodhpurmun@gmail.com</span>
               </li>
             </ul>
           </motion.div>
