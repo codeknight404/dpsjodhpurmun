@@ -836,15 +836,19 @@ export default function Home(): JSX.Element {
             className="flex gap-8 overflow-x-auto overflow-y-hidden pb-4 scroll-smooth snap-x snap-mandatory scrollbar-show"
           >
             {[
-              { name: 'Mudra Warde', post: 'USG EB Affairs', image: '/secretariat/mudra.jpeg' },
-              { name: 'Rachel C. Kujur', post: 'USG Literary', image: '/secretariat/rachel.jpeg' },
+            { name: 'Kamlesh Suthar', post: 'USG Design', image: '/secretariat/kamlesh.jpeg' },
+              
 
               { name: 'Harshal Sharma', post: 'USG IT', image: '/secretariat/harshal.jpeg' },
-              { name: 'Kamlesh Suthar', post: 'USG Design', image: '/secretariat/kamlesh.jpeg' },
+              { name: 'Bhavya Mutha', post: 'USG IT', image: '/secretariat/bhavyam.jpeg' },
+            { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
+              
               { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
-              { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
+              
+            { name: 'Mudra Warde', post: 'USG EB Affairs', image: '/secretariat/mudra.jpeg' },
               { name: 'Ayushi Chaudhary', post: 'USG Marketing', image: '/secretariat/ayushi.jpeg' },
               
+              { name: 'Rachel C. Kujur', post: 'USG Literary', image: '/secretariat/rachel.jpeg' },
               
               { name: 'Abhinna Das', post: 'USG EB Affairs', image: '/secretariat/abhinna.jpeg' },
               
