@@ -4,8 +4,6 @@ import React, { useState, useEffect, JSX } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button'; // Assuming this path is correct for your Button component
 import { motion, AnimatePresence, Variants, easeInOut } from 'framer-motion';
-import "swiper/css";
-import "swiper/css/navigation";
 import {
   Users,
   Calendar,
