@@ -587,7 +587,18 @@ export default function Home(): JSX.Element {
           </motion.div>
         </div>
       </section>
-
+<header className="w-full bg-white shadow-md">
+      <div className="mx-auto">
+        <Image
+          src="/banner.png" // put your .png file in public/banner.png
+          alt="Site Banner"
+          width={1200}
+          height={300}
+          className="w-full h-auto"
+          priority
+        />
+      </div>
+    </header>
       {/* About Section */}
       <section id="about" className="py-20 backdrop-filter backdrop-blur-md">
         <div className="mt-20 container mx-auto px-6">
@@ -860,7 +871,7 @@ export default function Home(): JSX.Element {
               { name: 'Bhavya Mutha', post: 'USG IT', image: '/secretariat/bhavyam.jpeg' },
             { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
               
-              { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
+              
               
             { name: 'Mudra Warde', post: 'USG EB Affairs', image: '/secretariat/mudra.jpeg' },
               { name: 'Ayushi Chaudhary', post: 'USG Marketing', image: '/secretariat/ayushi.jpeg' },
@@ -873,10 +884,10 @@ export default function Home(): JSX.Element {
               { name: 'Rupeksha Rajpurohit', post: 'USG Delegate Affairs', image: '/secretariat/rupeksha.jpeg' },
               { name: 'Vinay Chhugani', post: 'USG Delegate Affairs', image: '/secretariat/vinay.jpeg' },
               
-              { name: 'Prachi Shah', post: 'USG IT', image: '/secretariat/prachi.jpeg' },
+              
               { name: 'Krishna Dhoot', post: 'USG IT', image: '/secretariat/krishna.jpeg' },
               { name: 'Teesha Garg', post: 'USG Social Media', image: '/secretariat/teesha.jpeg' },
-              { name: 'Kavya Anchalia', post: 'USG Social Media', image: '/secretariat/kavya.jpeg' },
+            
               
               { name: 'Moulik Lodha', post: 'USG Cultural', image: '/secretariat/moulik.jpeg' },
               { name: 'Charvi Maheshwari', post: 'USG Cultural', image: '/secretariat/charvi.jpeg' },
@@ -890,6 +901,9 @@ export default function Home(): JSX.Element {
               { name: 'Gunnpreet Gulati', post: 'USG Transport', image: '/secretariat/gunnpreet.jpeg' },
               { name: 'Samarth Vasu', post: 'USG Catering', image: '/secretariat/samarth.jpeg' },
               { name: 'Bhavya Tiwari', post: 'USG Decoration', image: '/secretariat/bhavya.jpeg' },
+            { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
+            { name: 'Prachi Shah', post: 'USG IT', image: '/secretariat/prachi.jpeg' },
+              { name: 'Kavya Anchalia', post: 'USG Social Media', image: '/secretariat/kavya.jpeg' },
             ].map((member, index) => (
               <motion.div
                 key={index}
