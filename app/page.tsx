@@ -206,7 +206,7 @@ export default function Home(): JSX.Element {
       caption: "Announcing DPS MUN Jodhpur 2025!",
     },
     {
-      videoSrc: "/social/reel2.mp4",
+      videoSrc: "/social/reel2.MP4",
       thumbnail: "/social/reel2-thumb.jpg",
       username: "dpsmunjodhpur",
       caption: "Get ready for the event!",
