@@ -195,6 +195,30 @@ export default function Home(): JSX.Element {
   const [isLoaded, setIsLoaded] = useState(false);
   const [selectedCommittee, setSelectedCommittee] = useState<Committee | null>(null);
   const [activeCommitteeType, setActiveCommitteeType] = useState<'All' | 'International' | 'National'>('All'); // New state for filtering
+   const reels = [
+    {
+      videoSrc: "/social/reel1.mp4",
+      thumbnail: "/social/reel1-thumb.jpg",
+      username: "dpsmunjodhpur",
+      caption: "Announcing DPS MUN Jodhpur 2025!",
+    },
+    {
+      videoSrc: "/social/reel2.mp4",
+      thumbnail: "/social/reel2-thumb.jpg",
+      username: "dpsmunjodhpur",
+      caption: "Get ready for the event!",
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevReel = () => {
+    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : reels.length - 1));
+  };
+
+  const nextReel = () => {
+    setCurrentIndex((prev) => (prev < reels.length - 1 ? prev + 1 : 0));
+  };
 
   useEffect(() => {
     setIsLoaded(true);
@@ -380,7 +404,7 @@ export default function Home(): JSX.Element {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners', 'Timeline'].map((item) => (
+            {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners', 'Social-Media', 'Timeline'].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -420,7 +444,7 @@ export default function Home(): JSX.Element {
               className="md:hidden bg-white border-t border-gray-200"
             >
               <div className="px-6 py-4 space-y-4">
-                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners', 'Timeline'].map((item) => (
+                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners','Social-Media', 'Timeline'].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
@@ -956,7 +980,18 @@ export default function Home(): JSX.Element {
           </motion.div>
         </div>
       </section>
-
+<section
+         id="social-media"
+  className="
+    overflow-y-scroll 
+    snap-y 
+    snap-mandatory 
+    scrollbar-hide 
+    backdrop-blur-md
+    pt-24
+  "
+>
+</section>
 
       {/* Timeline Section */}
       <section id="timeline" className="py-20 backdrop-filter backdrop-blur-md">
