@@ -485,6 +485,19 @@ export default function Home(): JSX.Element {
                 conference. Where young minds shape the future through debate, diplomacy, and international cooperation.
               </motion.p>
 
+              <div className='flex gap-5'>
+              <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSegjthIaYGwe6uPPD7smIpHyJS8W61yYUVoyDnL7jPqJd8ijQ/viewform" target='_blank' rel="noopener noreferrer">
+                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                    <Button
+                      variant="outline"
+                      className="border-2 border-[#1A522A] text-[#1A522A] hover:bg-[#1A522A] hover:text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300"
+                    >
+                      Register Now
+                    </Button>
+                  </motion.div>
+                </Link>
+              </motion.div>
               <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link href="#about">
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -497,7 +510,7 @@ export default function Home(): JSX.Element {
                   </motion.div>
                 </Link>
               </motion.div>
-
+              </div>
               {/* Quick Info */}
               <motion.div variants={fadeInUp} className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center lg:text-left">
                 <div className="flex items-center justify-center lg:justify-start space-x-2">
