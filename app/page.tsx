@@ -266,7 +266,7 @@ export default function Home(): JSX.Element {
       type: 'International',
     },
     {
-      name: 'United Nations General Assembly First Committee',
+      name: ' Disarmament and International Security Committee',
       short: 'DISEC',
       description: 'The UN General Assembly\'s main committee for disarmament and international security matters.',
       
@@ -1089,7 +1089,10 @@ export default function Home(): JSX.Element {
               <li><Link href="#about" className="text-white/80 hover:text-white transition-colors">About Us</Link></li>
               <li><Link href="#committees" className="text-white/80 hover:text-white transition-colors">Committees</Link></li>
               <li><Link href="#secretariat" className="text-white/80 hover:text-white transition-colors">Secretariat</Link></li>
+              <li><Link href="#event%20partners" className="text-white/80 hover:text-white transition-colors">Event Partners</Link></li>
+              <li><Link href="#social-media" className="text-white/80 hover:text-white transition-colors">Social Media</Link></li>
               <li><Link href="#timeline" className="text-white/80 hover:text-white transition-colors">Timeline</Link></li>
+              <li><Link href="https://docs.google.com/forms/d/e/1FAIpQLSegjthIaYGwe6uPPD7smIpHyJS8W61yYUVoyDnL7jPqJd8ijQ/viewform" className="text-white/80 hover:text-white transition-colors">Register</Link></li>
             </ul>
           </motion.div>
 
