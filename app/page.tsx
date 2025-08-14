@@ -266,7 +266,7 @@ export default function Home(): JSX.Element {
       type: 'International',
     },
     {
-      name: ' Disarmament and International Security Committee',
+      name: ' United Nations General Assembly First Committee',
       short: 'DISEC',
       description: 'The UN General Assembly\'s main committee for disarmament and international security matters.',
       
