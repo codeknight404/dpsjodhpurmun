@@ -899,6 +899,7 @@ export default function Home(): JSX.Element {
               { name: 'Kenjal Jain', post: 'USG Finance', image: '/secretariat/kenjal.jpeg' },
               { name: 'Rakshit Loonkar', post: 'USG Finance', image: '/secretariat/rakshit.jpeg' },
               { name: 'Gunnpreet Gulati', post: 'USG Transport', image: '/secretariat/gunnpreet.jpeg' },
+              { name: 'Raunak Pamnani', post: 'USG Transport', image: '/secretariat/raunak.jpeg' },
               { name: 'Samarth Vasu', post: 'USG Catering', image: '/secretariat/samarth.jpeg' },
               { name: 'Bhavya Tiwari', post: 'USG Decoration', image: '/secretariat/bhavya.jpeg' },
             { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
