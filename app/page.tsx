@@ -407,7 +407,7 @@ export default function Home(): JSX.Element {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Committees', 'Secretariat','Event Partners', 'Timeline'].map((item) => (
+            {['Home', 'About', 'Committees', 'Secretariat','Event Partners', 'Social-Media', 'Timeline'].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -440,7 +440,7 @@ export default function Home(): JSX.Element {
               className="md:hidden bg-white border-t border-gray-200"
             >
               <div className="px-6 py-4 space-y-4">
-                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners','Timeline'].map((item) => (
+                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners','Social-Media','Timeline'].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
@@ -1081,7 +1081,9 @@ export default function Home(): JSX.Element {
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <Mail className="w-5 h-5 mr-2" />
+                <Link href = 'mailto:queries.dpsjodhpurmun@gmail.com' target='_blank'>
                 <span>queries.dpsjodhpurmun@gmail.com</span>
+                  </Link>
               </li>
             </ul>
           </motion.div>
