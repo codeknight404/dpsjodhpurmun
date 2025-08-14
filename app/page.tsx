@@ -422,7 +422,7 @@ export default function Home(): JSX.Element {
 
           {/* Desktop Auth Buttons: Use the AuthNavButtons component */}
           <div className="hidden md:flex">
-<Link href='forms.gle/L7qS7NniAM3Y4zP3A' target='_blank'>
+<Link href='https://docs.google.com/forms/d/e/1FAIpQLSegjthIaYGwe6uPPD7smIpHyJS8W61yYUVoyDnL7jPqJd8ijQ/viewform' target='_blank'>
 <button className='flex p-4 pt-2 pb-2 bg-[#1A522A] rounded-[10px] text-white gap-2'><UserRoundPlus /> Register</button></Link> 
           </div>
 
@@ -454,7 +454,7 @@ export default function Home(): JSX.Element {
                 ))}
                 <div className="pt-4 border-t border-gray-200 space-y-2">
                   {/* Mobile Auth Buttons: Use AuthNavButtons here too */}
-                  <Link href='forms.gle/L7qS7NniAM3Y4zP3A' target='_blank'>
+                  <Link href='https://docs.google.com/forms/d/e/1FAIpQLSegjthIaYGwe6uPPD7smIpHyJS8W61yYUVoyDnL7jPqJd8ijQ/viewform' target='_blank'>
 <button className='flex p-4 pt-2 pb-2 bg-[#1A522A] rounded-[10px] text-white gap-2'><UserRoundPlus /> Register</button></Link>
  
                 </div>
@@ -487,7 +487,7 @@ export default function Home(): JSX.Element {
 
               <div className='flex gap-5'>
               <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link href="forms.gle/L7qS7NniAM3Y4zP3A" target='_blank' rel="noopener noreferrer">
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSegjthIaYGwe6uPPD7smIpHyJS8W61yYUVoyDnL7jPqJd8ijQ/viewform" target='_blank' rel="noopener noreferrer">
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                     <Button
                       variant="outline"
@@ -1111,7 +1111,7 @@ export default function Home(): JSX.Element {
               <li><Link href="#event%20partners" className="text-white/80 hover:text-white transition-colors">Event Partners</Link></li>
               <li><Link href="#social-media" className="text-white/80 hover:text-white transition-colors">Social Media</Link></li>
               <li><Link href="#timeline" className="text-white/80 hover:text-white transition-colors">Timeline</Link></li>
-              <li><Link href="forms.gle/L7qS7NniAM3Y4zP3A" className="text-white/80 hover:text-white transition-colors">Register</Link></li>
+              <li><Link href="https://docs.google.com/forms/d/e/1FAIpQLSegjthIaYGwe6uPPD7smIpHyJS8W61yYUVoyDnL7jPqJd8ijQ/viewform" className="text-white/80 hover:text-white transition-colors">Register</Link></li>
             </ul>
           </motion.div>
 
