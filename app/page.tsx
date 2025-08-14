@@ -962,7 +962,8 @@ export default function Home(): JSX.Element {
           >
 <h2 className="text-4xl md:text-5xl font-bold text-[#1A522A] m-10">Social Media</h2>
 <p className="text-base text-gray-600 max-w-xl mb-10 mx-auto">
-              Trusted by leading institutions that believe in the power of youth, diplomacy, and global discourse.
+              Explore our latest updates, announcements, and behind-the-scenes moments straight from our official social media. 
+  From event highlights to important announcements, this is where the buzz happens — follow along and never miss a moment!
             </p>
 
             <div className="relative w-full max-w-md h-[100vh] mx-auto overflow-hidden rounded-xl bg-black">
