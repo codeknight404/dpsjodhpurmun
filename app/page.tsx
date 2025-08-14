@@ -21,6 +21,7 @@ import {
   Phone,
   FileText,
   UserCheck,
+  UserRoundPlus,
 } from 'lucide-react';
 import Image from 'next/image';
 import InstagramReelCard from '@/components/reels'; // Adjust the import path as necessary
@@ -421,7 +422,8 @@ export default function Home(): JSX.Element {
 
           {/* Desktop Auth Buttons: Use the AuthNavButtons component */}
           <div className="hidden md:flex">
-
+<Link href='https://docs.google.com/forms/d/e/1FAIpQLSegjthIaYGwe6uPPD7smIpHyJS8W61yYUVoyDnL7jPqJd8ijQ/viewform' target='_blank'>
+<button className='flex p-4 pt-2 pb-2 bg-[#1A522A] rounded-[10px] text-white gap-2'><UserRoundPlus /> Register</button></Link> 
           </div>
 
           {/* Mobile Menu Button */}
@@ -452,7 +454,9 @@ export default function Home(): JSX.Element {
                 ))}
                 <div className="pt-4 border-t border-gray-200 space-y-2">
                   {/* Mobile Auth Buttons: Use AuthNavButtons here too */}
-
+                  <Link href='https://docs.google.com/forms/d/e/1FAIpQLSegjthIaYGwe6uPPD7smIpHyJS8W61yYUVoyDnL7jPqJd8ijQ/viewform' target='_blank'>
+<button className='flex p-4 pt-2 pb-2 bg-[#1A522A] rounded-[10px] text-white gap-2'><UserRoundPlus /> Register</button></Link>
+ 
                 </div>
               </div>
             </motion.div>
