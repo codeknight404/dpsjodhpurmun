@@ -945,6 +945,7 @@ export default function Home(): JSX.Element {
             </p>
           </motion.div>
 
+          <div className='gap-5 flex'>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -954,25 +955,29 @@ export default function Home(): JSX.Element {
           >
             {[
               { name: 'DPS Jodhpur', logo: '/sponsors/dpsjodhpur.png' },
+              { name: 'Printing Gali', logo: '/sponsors/printinggali.png' }
             ].map((sponsor, index) => (
-              <motion.div
-                key={index}
-                variants={fadeInUp}
-                whileHover={{ scale: 1.03 }}
-                className="bg-white border border-gray-200 rounded-xl shadow-sm block items-center justify-center h-50 min-w-50 transition-all duration-300 p-4"
-              >
-                <div className="flex flex-col items-center justify-center">
-                  <Image
-                    src={sponsor.logo}
-                    alt={sponsor.name}
-                    width={100}
-                    height={60}
-                    className="object-contain h-25  "
-                  />
-                  <p className="text-[1.5em] text-shadow-2xs font-bold text-[#1A522A] mt-2 racing-sans-one-regular">{sponsor.name}</p></div>
+              
+                <motion.div
+                  key={index}
+                  variants={fadeInUp}
+                  whileHover={{ scale: 1.03 }}
+                  className="bg-white border border-gray-200 rounded-xl shadow-sm block items-center justify-center h-50 min-w-50 transition-all duration-300 p-4"
+                >
+                  <div className="flex flex-col items-center justify-center">
+                    <Image
+                      src={sponsor.logo}
+                      alt={sponsor.name}
+                      width={100}
+                      height={60}
+                      className="object-contain h-25  "
+                    />
+                    <p className="text-[1.5em] text-shadow-2xs font-bold text-[#1A522A] mt-2 racing-sans-one-regular">{sponsor.name}</p>
+                  </div>
               </motion.div>
             ))}
           </motion.div>
+          </div>
         </div>
       </section>
          <section
