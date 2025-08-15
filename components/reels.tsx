@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Play, Volume2, VolumeX } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ReelCardProps {
   videoSrc: string; // from /public folder or external link
@@ -122,4 +123,5 @@ export default function InstagramReelCard({
     </Card>
   );
 }
+
 
