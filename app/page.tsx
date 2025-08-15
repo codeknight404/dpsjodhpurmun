@@ -485,7 +485,7 @@ export default function Home(): JSX.Element {
                 conference. Where young minds shape the future through debate, diplomacy, and international cooperation.
               </motion.p>
 
-              <div className='flex gap-5'>
+              <div className='lg:flex flex-col gap-5'>
               <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link href="https://docs.google.com/forms/d/e/1FAIpQLSegjthIaYGwe6uPPD7smIpHyJS8W61yYUVoyDnL7jPqJd8ijQ/viewform" target='_blank' rel="noopener noreferrer">
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -708,7 +708,7 @@ export default function Home(): JSX.Element {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeInUp}
-            className="flex justify-center gap-4 mb-12"
+            className="lg:flex flex-col justify-center gap-4 mb-12"
           >
             <Button
               variant={activeCommitteeType === 'All' ? 'default' : 'outline'}
