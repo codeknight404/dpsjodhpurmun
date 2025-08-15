@@ -1017,7 +1017,7 @@ export default function Home(): JSX.Element {
       {/* Up arrow */}
       <button
         onClick={prevReel}
-        className="absolute top-4 left-1/2 -translate-x-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full"
+        className="absolute top-4 left-1/2 -translate-x-1/2 bg-black/20 hover:bg-black/40 text-black p-2 rounded-full"
       >
         ↑
       </button>
@@ -1025,7 +1025,7 @@ export default function Home(): JSX.Element {
       {/* Down arrow */}
       <button
         onClick={nextReel}
-        className="absolute bottom-4 text-3xl left-1/2 -translate-x-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full"
+        className="absolute bottom-4 text-3xl left-1/2 -translate-x-1/2 bg-black/20 hover:bg-black/40 text-black p-2 rounded-full"
       >
         ↓
       </button>
