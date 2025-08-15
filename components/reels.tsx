@@ -63,9 +63,11 @@ export default function InstagramReelCard({
           <div className="font-medium text-sm">{displayName ?? username}</div>
           <div className="text-xs text-muted-foreground">@{username}</div>
         </div>
+        <Link href='https://www.instagram.com/dpsmunjodhpur/' target='_blank'>
         <Button size="sm" variant="outline">
           Follow
         </Button>
+        </Link>
       </CardHeader>
 
       {/* Video frame */}
@@ -120,3 +122,4 @@ export default function InstagramReelCard({
     </Card>
   );
 }
+
