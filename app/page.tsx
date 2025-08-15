@@ -408,7 +408,7 @@ export default function Home(): JSX.Element {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Committees', 'Secretariat','Event Partners', 'Social-Media', 'Timeline'].map((item) => (
+            {['Home', 'About', 'Committees', 'Secretariat','Event Partners', 'Social Media', 'Timeline'].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -442,7 +442,7 @@ export default function Home(): JSX.Element {
               className="md:hidden bg-white border-t border-gray-200"
             >
               <div className="px-6 py-4 space-y-4">
-                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners','Social-Media','Timeline'].map((item) => (
+                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners','Social Media','Timeline'].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
@@ -872,7 +872,7 @@ export default function Home(): JSX.Element {
             { name: 'Deshna Jain', post: 'USG Design', image: '/secretariat/deshna.jpeg' },
               
               
-              
+              { name: 'Teesha Garg', post: 'USG Social Media', image: '/secretariat/teesha.jpeg' },
             { name: 'Mudra Warde', post: 'USG EB Affairs', image: '/secretariat/mudra.jpeg' },
               { name: 'Ayushi Chaudhary', post: 'USG Marketing', image: '/secretariat/ayushi.jpeg' },
               
@@ -885,8 +885,8 @@ export default function Home(): JSX.Element {
               { name: 'Vinay Chhugani', post: 'USG Delegate Affairs', image: '/secretariat/vinay.jpeg' },
               
               
-              { name: 'Krishna Dhoot', post: 'USG IT', image: '/secretariat/krishna.jpeg' },
-              { name: 'Teesha Garg', post: 'USG Social Media', image: '/secretariat/teesha.jpeg' },
+              
+              
             
               
               { name: 'Moulik Lodha', post: 'USG Cultural', image: '/secretariat/moulik.jpeg' },
@@ -902,6 +902,7 @@ export default function Home(): JSX.Element {
               { name: 'Raunak Pamnani', post: 'USG Transport', image: '/secretariat/raunak.jpeg' },
               { name: 'Samarth Vasu', post: 'USG Catering', image: '/secretariat/samarth.jpeg' },
               { name: 'Bhavya Tiwari', post: 'USG Decoration', image: '/secretariat/bhavya.jpeg' },
+            { name: 'Krishna Dhoot', post: 'USG IT', image: '/secretariat/krishna.jpeg' },
             { name: 'Priyal Bhandari', post: 'USG IT', image: '/secretariat/priyal.jpeg' },
             { name: 'Prachi Shah', post: 'USG IT', image: '/secretariat/prachi.jpeg' },
               { name: 'Kavya Anchalia', post: 'USG Social Media', image: '/secretariat/kavya.jpeg' },
@@ -982,7 +983,7 @@ export default function Home(): JSX.Element {
         </div>
       </section>
          <section
-         id="social-media"
+         id="social media"
   className="
     overflow-y-scroll 
     snap-y 
@@ -992,7 +993,7 @@ export default function Home(): JSX.Element {
     pt-24
   "
 >
-</section>
+
 <div className="container mx-auto px-6">
           <motion.div
             initial="hidden"
@@ -1007,7 +1008,7 @@ export default function Home(): JSX.Element {
   From event highlights to important announcements, this is where the buzz happens — follow along and never miss a moment!
             </p>
 
-            <div className="relative w-full max-w-md h-[100vh] mx-auto overflow-hidden rounded-xl bg-black">
+            <div className="relative w-full max-w-md h-[100vh] mx-auto overflow-hidden rounded-xl bg-transparent">
       {/* Current Reel */}
       <div className="w-full h-full">
         <InstagramReelCard {...reels[currentIndex]} />
@@ -1029,7 +1030,9 @@ export default function Home(): JSX.Element {
         ↓
       </button>
     </div>
+            
 </motion.div></div>
+           </section>
       {/* Timeline Section */}
       <section id="timeline" className="py-20 backdrop-filter backdrop-blur-md">
         <div className="mt-20 container mx-auto px-6">
@@ -1110,7 +1113,7 @@ export default function Home(): JSX.Element {
               <li><Link href="#committees" className="text-white/80 hover:text-white transition-colors">Committees</Link></li>
               <li><Link href="#secretariat" className="text-white/80 hover:text-white transition-colors">Secretariat</Link></li>
               <li><Link href="#event%20partners" className="text-white/80 hover:text-white transition-colors">Event Partners</Link></li>
-              <li><Link href="#social-media" className="text-white/80 hover:text-white transition-colors">Social Media</Link></li>
+              <li><Link href="#social%20media" className="text-white/80 hover:text-white transition-colors">Social Media</Link></li>
               <li><Link href="#timeline" className="text-white/80 hover:text-white transition-colors">Timeline</Link></li>
               <li><Link href="https://docs.google.com/forms/d/e/1FAIpQLSegjthIaYGwe6uPPD7smIpHyJS8W61yYUVoyDnL7jPqJd8ijQ/viewform" className="text-white/80 hover:text-white transition-colors">Register</Link></li>
             </ul>
