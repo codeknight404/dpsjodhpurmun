@@ -262,7 +262,7 @@ export default function Home(): JSX.Element {
       delegates: 40,
       agenda: 'ADDRESSING GENDER-BASED ECONOMIC INEQUALITIES- A CRITICAL EVALUATION OF THE PINK TAX AND ITS IMPACT ON WOMEN\'S FINANCIAL EQUALITY',
       chairpersons: ['Revealing Soon'],
-      rulesPdf: '/filenotfound',
+      rulesPdf: '/Rules/UNCSW.pdf',
       type: 'International',
     },
     {
@@ -273,7 +273,7 @@ export default function Home(): JSX.Element {
       delegates: 40,
       agenda: 'WARFARE 2.0: ADDRESSING EMERGING THREATS AND REDEFINING WAR CRIMES IN THE CONTEXT OF CYBER WARFARE AND DIGITAL CONFLICT',
       chairpersons: ['Revealing Soon'],
-      rulesPdf: '/filenotfound',
+      rulesPdf: '/Rules/DISEC.pdf',
       type: 'International',
     },
     {
@@ -284,7 +284,7 @@ export default function Home(): JSX.Element {
       delegates: 30,
       agenda: 'DELIBERATION ON RISING TENSIONS BETWEEN ISRAEL AND IRAN AND STRATEGIES FOR DE-ESCALATION.',
       chairpersons: ['Revealing Soon'],
-      rulesPdf: '/filenotfound',
+      rulesPdf: '/Rules/UNSC.pdf',
       type: 'International',
     },
     {
@@ -295,7 +295,7 @@ export default function Home(): JSX.Element {
       delegates: 50,
       agenda: 'DIPLOMATIC REFLECTIONS ON THE 1999 KARGIL WAR AND ITS ENDURING INFLUENCE ON INDO-PAK RELATIONS AND INDIA\’S FOREIGN POLICY',
       chairpersons: ['Revealing Soon'],
-      rulesPdf: '/filenotfound',
+      rulesPdf: '/Rules/HCC.pdf',
       type: 'National',
     },
     {
@@ -350,7 +350,7 @@ export default function Home(): JSX.Element {
       delegates: 30,
       agenda: 'JOURNALISM | PHOTOGRAPHY | CINEMATOGRAPHY | CARICATURE',
       chairpersons: ['Revealing Soon'],
-      rulesPdf: '/filenotfound',
+      rulesPdf: '/Rules/IP.pdf',
       type: 'International',
     },
   ];
