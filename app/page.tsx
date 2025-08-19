@@ -943,7 +943,6 @@ export default function Home(): JSX.Element {
             className="flex flex-col sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
             >
             {[
-              { name: 'DPS Jodhpur', logo: '/sponsors/dpsjodhpur.png' },
               { name: 'Printing Gali', logo: '/sponsors/printinggali.png' }
             ].map((sponsor, index) => (
               
