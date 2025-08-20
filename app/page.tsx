@@ -306,7 +306,7 @@ export default function Home(): JSX.Element {
       delegates: 50,
       agenda: 'PROMOTING AND PROTECTING FREEDOM OF THE PRESS AND THE SAFETY OF JOURNALISTS AMID RISING AUTHORITARIANISM',
       chairpersons: ['Revealing Soon'],
-      rulesPdf: '/filenotfound',
+      rulesPdf: '/Rules/UNHRC.pdf',
       type: 'International',
     },
     {
