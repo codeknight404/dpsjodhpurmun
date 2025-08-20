@@ -328,7 +328,7 @@ export default function Home(): JSX.Element {
       delegates: 140,
       agenda: 'DELIBERATION ON COMPREHENSIVE ELECTORAL REFORMS WITH SPECIAL EMPHASIS ON THE CRIMINALISATION OF POLITICS IN INDIA',
       chairpersons: ['Speaker - Mr Shreyansh Bhandawat', 'Deputy Speaker - Mr Aditya Gill', 'Secretary - Mr Lakshya Raj Singh Sisodia'],
-      rulesPdf: '/filenotfound',
+      rulesPdf: '/Rules/LokSabha.pdf',
       type: 'National',
     },
     {
