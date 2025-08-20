@@ -261,7 +261,7 @@ export default function Home(): JSX.Element {
       
       delegates: 40,
       agenda: 'ADDRESSING GENDER-BASED ECONOMIC INEQUALITIES- A CRITICAL EVALUATION OF THE PINK TAX AND ITS IMPACT ON WOMEN\'S FINANCIAL EQUALITY',
-      chairpersons: ['Revealing Soon'],
+      chairpersons: ['Chairperson - Ms Muskan Prajapat', 'Vice Chairperson - Ms Diya Jain', 'Rapporteur - Ms Rishika Jain'],
       rulesPdf: '/Rules/UNCSW.pdf',
       type: 'International',
     },
@@ -272,7 +272,7 @@ export default function Home(): JSX.Element {
       
       delegates: 40,
       agenda: 'WARFARE 2.0: ADDRESSING EMERGING THREATS AND REDEFINING WAR CRIMES IN THE CONTEXT OF CYBER WARFARE AND DIGITAL CONFLICT',
-      chairpersons: ['Revealing Soon'],
+      chairpersons: ['Chairperson - Mr Parth Mangal', 'Vice Chairperson - Ms Khushi Agarwal', 'Rapporteur - Ms Raina Gaur'],
       rulesPdf: '/Rules/DISEC.pdf',
       type: 'International',
     },
@@ -283,7 +283,7 @@ export default function Home(): JSX.Element {
       
       delegates: 30,
       agenda: 'DELIBERATION ON RISING TENSIONS BETWEEN ISRAEL AND IRAN AND STRATEGIES FOR DE-ESCALATION.',
-      chairpersons: ['Revealing Soon'],
+      chairpersons: ['President - Mr Jayant Thanvi', 'Vice President - Mr Vedansh Bhardwaj'],
       rulesPdf: '/Rules/UNSC.pdf',
       type: 'International',
     },
@@ -294,7 +294,7 @@ export default function Home(): JSX.Element {
       
       delegates: 50,
       agenda: 'DIPLOMATIC REFLECTIONS ON THE 1999 KARGIL WAR AND ITS ENDURING INFLUENCE ON INDO-PAK RELATIONS AND INDIA\’S FOREIGN POLICY',
-      chairpersons: ['Revealing Soon'],
+      chairpersons: ['Chairperson - Mr Aabhas Chaturvedi', 'Vice Chairperson - Mr Yash Bohra', 'Scribe - Mr Nipurn Joshi'],
       rulesPdf: '/Rules/HCC.pdf',
       type: 'National',
     },
@@ -305,7 +305,7 @@ export default function Home(): JSX.Element {
       
       delegates: 50,
       agenda: 'PROMOTING AND PROTECTING FREEDOM OF THE PRESS AND THE SAFETY OF JOURNALISTS AMID RISING AUTHORITARIANISM',
-      chairpersons: ['Revealing Soon'],
+      chairpersons: ['President - Mr Kunal Arya', 'Vice President - Mr Shaurya S. Pundir', 'Rapporteur - Ms Purvai Singhvi'],
       rulesPdf: '/Rules/UNHRC.pdf',
       type: 'International',
     },
@@ -316,7 +316,7 @@ export default function Home(): JSX.Element {
       
       delegates: 30,
       agenda: 'ACCELERATING GLOBAL ACTION TO END PREVENTABLE CHILD DEATHS BY 2030',
-      chairpersons: ['Revealing Soon'],
+      chairpersons: ['Co Chairperson - Mr Akhilesh Pratap Singh', 'Co Chairperson - Ms Ayushi Bulani', 'Rapporteur - Ms Shivranjani Singh'],
       rulesPdf: '/filenotfound',
       type: 'International',
     },
@@ -327,7 +327,7 @@ export default function Home(): JSX.Element {
       
       delegates: 140,
       agenda: 'DELIBERATION ON COMPREHENSIVE ELECTORAL REFORMS WITH SPECIAL EMPHASIS ON THE CRIMINALISATION OF POLITICS IN INDIA',
-      chairpersons: ['Revealing Soon'],
+      chairpersons: ['Speaker - Mr Shreyansh Bhandawat', 'Deputy Speaker - Mr Aditya Gill', 'Secretary - Mr Lakshya Raj Singh Sisodia'],
       rulesPdf: '/filenotfound',
       type: 'National',
     },
@@ -338,7 +338,7 @@ export default function Home(): JSX.Element {
       
       delegates: 30,
       agenda: 'EXAMINING THE LEGAL CONSEQUENCES OF CONFLICTS BETWEEN DOMESTIC LEGISLATION AND INTERNATIONAL TREATY OBLIGATIONS WITH SPECIAL EMPHASIS ON THE JUDICIAL PRECEDENTS INCLUDING BREARD V. GREENE AND THE NORTH SEA CONTINENTAL SHELF CASES',
-      chairpersons: ['Revealing Soon'],
+      chairpersons: ['President - Mr Devansh Jaiswal', 'Vice President - Ms Tisha Kumar', 'Rapporteur - Mr Siddharth Sharma'],
       rulesPdf: '/filenotfound',
       type: 'International',
     },
@@ -349,7 +349,7 @@ export default function Home(): JSX.Element {
       
       delegates: 30,
       agenda: 'JOURNALISM | PHOTOGRAPHY | CINEMATOGRAPHY | CARICATURE',
-      chairpersons: ['Revealing Soon'],
+      chairpersons: ['Head of Photography - Mr Gaurav Bairwa', 'Head of Journalism - Ms Ayesha Anjum Sherani'],
       rulesPdf: '/Rules/IP.pdf',
       type: 'International',
     },
