@@ -339,7 +339,7 @@ export default function Home(): JSX.Element {
       delegates: 30,
       agenda: 'EXAMINING THE LEGAL CONSEQUENCES OF CONFLICTS BETWEEN DOMESTIC LEGISLATION AND INTERNATIONAL TREATY OBLIGATIONS WITH SPECIAL EMPHASIS ON THE JUDICIAL PRECEDENTS INCLUDING BREARD V. GREENE AND THE NORTH SEA CONTINENTAL SHELF CASES',
       chairpersons: ['President - Mr Devansh Jaiswal', 'Vice President - Ms Tisha Kumar', 'Rapporteur - Mr Siddharth Sharma'],
-      rulesPdf: '/filenotfound',
+      rulesPdf: '/Rules/ICJ.pdf',
       type: 'International',
     },
     {
@@ -949,6 +949,8 @@ export default function Home(): JSX.Element {
               { name: "Nature's Park", logo: '/sponsors/naturespark.png' },
               { name: 'V.K. Vatwani', logo: '/sponsors/vkvatwani.png' },
               { name: 'Imperial Arts', logo: '/sponsors/imperialarts.png' },
+              { name: 'The Dessert Box', logo: '/sponsors/desertbox.png' },
+              { name: 'Bindle & Butter', logo: '/sponsors/bindlebutter.png' },
             ].map((sponsor, index) => (
               
               <motion.div
