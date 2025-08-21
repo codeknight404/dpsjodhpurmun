@@ -943,7 +943,12 @@ export default function Home(): JSX.Element {
             className="flex flex-col sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
             >
             {[
-              { name: 'Printing Gali', logo: '/sponsors/printinggali.png' }
+              { name: 'Printing Gali', logo: '/sponsors/printinggali.png' },
+              { name: 'Amit CAT Scan Centre (P) Ltd', logo: '/sponsors/amitcatscan.png' },
+              { name: 'Unacademy', logo: '/sponsors/unacademy.png' },
+              { name: "Nature's Park", logo: '/sponsors/naturespark.png' },
+              { name: 'V.K. Vatwani', logo: '/sponsors/vkvatwani.png' },
+              { name: 'Imperial Arts', logo: '/sponsors/imperialarts.png' },
             ].map((sponsor, index) => (
               
               <motion.div
