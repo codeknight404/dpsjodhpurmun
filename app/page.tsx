@@ -317,7 +317,7 @@ export default function Home(): JSX.Element {
       delegates: 30,
       agenda: 'ACCELERATING GLOBAL ACTION TO END PREVENTABLE CHILD DEATHS BY 2030',
       chairpersons: ['Co Chairperson - Mr Akhilesh Pratap Singh', 'Co Chairperson - Ms Ayushi Bulani', 'Rapporteur - Ms Shivranjani Singh'],
-      rulesPdf: '/filenotfound',
+      rulesPdf: '/Rules/UNICEF.pdf',
       type: 'International',
     },
     {
