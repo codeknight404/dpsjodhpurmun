@@ -940,7 +940,7 @@ export default function Home(): JSX.Element {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerChildren}
-            className="flex flex-col sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
+            className="flex flex-col sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6"
             >
             {[
               { name: 'Printing Gali', logo: '/sponsors/printinggali.png' },
