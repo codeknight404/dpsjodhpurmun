@@ -965,7 +965,7 @@ export default function Home(): JSX.Element {
                   height={60}
                   className="object-contain h-25"
                 />
-                <p className="text-[1.5em] text-shadow-2xs font-bold text-[#1A522A] mt-2 racing-sans-one-regular">{sponsor.name}</p>
+                <p className="text-[1.2em] text-shadow-2xs font-bold text-[#1A522A] mt-2 racing-sans-one-regular">{sponsor.name}</p>
                 </div>
               </motion.div>
             ))}
