@@ -174,7 +174,7 @@ const CommitteeDetailModal: React.FC<CommitteeDetailModalProps> = ({ committee, 
 
           <div>
             <h3 className="text-xl font-semibold mb-2 flex items-center">
-              <FileText className="w-5 h-5 mr-2 text-[#2E8B57]" /> Rules of Procedure
+              <FileText className="w-5 h-5 mr-2 text-[#2E8B57]" /> Background Guide
             </h3>
             <a
               href={committee.rulesPdf}
