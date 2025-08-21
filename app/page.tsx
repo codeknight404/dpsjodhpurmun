@@ -944,7 +944,7 @@ export default function Home(): JSX.Element {
             >
             {[
               { name: 'Printing Gali', logo: '/sponsors/printinggali.png' },
-              { name: 'Amit CAT Scan Centre (P) Ltd', logo: '/sponsors/amitcatscan.png' },
+              { name: 'Amit CAT Scan Centre', logo: '/sponsors/amitcatscan.png' },
               { name: 'Unacademy', logo: '/sponsors/unacademy.png' },
               { name: "Nature's Park", logo: '/sponsors/naturespark.png' },
               { name: 'V.K. Vatwani', logo: '/sponsors/vkvatwani.png' },
