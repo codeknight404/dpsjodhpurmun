@@ -408,7 +408,7 @@ export default function Home(): JSX.Element {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Committees', 'Secretariat','Event Partners', 'Social Media', 'Timeline'].map((item) => (
+            {['Home', 'About', 'Committees', 'Secretariat','Event Partners','Aftermovie', 'Social Media', 'Timeline'].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -441,7 +441,7 @@ export default function Home(): JSX.Element {
               className="md:hidden bg-white border-t border-gray-200"
             >
               <div className="px-6 py-4 space-y-4">
-                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners','Social Media','Timeline'].map((item) => (
+                {['Home', 'About', 'Committees', 'Secretariat', 'Event Partners','Aftermovie','Social Media','Timeline'].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
@@ -974,6 +974,25 @@ export default function Home(): JSX.Element {
             </motion.div>
             </div>
         </div>
+      </section>
+      <section id='aftermovie' className='py-20 pt-24 bg-white/90 backdrop-blur-md'>
+      <div className="container mx-auto px-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInUp}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1A522A] mb-2">Aftermovie</h2>
+            <p className="text-base text-gray-600 max-w-xl mx-auto">
+              Relive the moments from DPS MUN Jodhpur 2025!
+            </p>
+          </motion.div>
+          <div className='flex justify-center'>
+          <iframe src="https://drive.google.com/file/d/1_r98sIt9RbS4l-ifGCSSr288EycGm4lR/preview" width="1240" height="600" allow="autoplay" className='rounded-2xl min-h-auto min-w-auto'></iframe>
+          </div>
+          </div>
       </section>
          <section
          id="social media"
